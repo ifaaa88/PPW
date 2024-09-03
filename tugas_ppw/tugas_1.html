@@ -409,6 +409,36 @@ document.write(`
 <ul class="simple">
 <li><p>Bagi pengelola situs web, memahami bagaimana proses crawling bekerja dapat membantu dalam optimasi mesin pencari (SEO). Dengan memastikan bahwa halaman-halaman web mereka mudah di-crawl dan diindeks, mereka bisa meningkatkan kemungkinan situs web mereka muncul di hasil pencarian mesin pencari.</p></li>
 </ul>
+<p><strong>Cara Crawling Data</strong></p>
+<p>pertama kita tentukan terlebih dahulu ingin mengambil data berita dari sumber mana, jika sudah menentukan data yang akan diambil dan di crawling, kemudian kita lakukan crawling data menggunakan code.</p>
+<ol class="arabic simple">
+<li><p>langkah pertama melakukan import Library yang akan mempermudah saat melakukan crawling data.</p></li>
+</ol>
+<ul class="simple">
+<li><p>import requests (digunakan untuk melakukan permintaan HTTP ke web server, seperti GET atau POST, dan mendapatkan tanggapan, termasuk HTML dari halaman web yang akan discrape.)</p></li>
+<li><p>from bs4 import BeautifulSoup (digunakan untuk parsing dokumen HTML yang didapatkan dari permintaan HTTP, membuatnya lebih mudah untuk bergerak melalui struktur HTML, mencari elemen, dan mengubah data.)</p></li>
+<li><p>import pandas as pd (library ini mengorganisir data dalam bentuk tabel, seperti dataframe, yang memudahkan analisis dan penyimpanan data kedalam format seperti CSV.)</p></li>
+<li><p>import time (library  ini menambahkan jeda waktu, atau tidur, antara satu operasi dan operasi berikutnya, yang penting untuk proses crawling agar tidak terlalu banyak permintaan dalam waktu singkat.)</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>langkah kedua code mengambil data dari sebuah halaman web, memprosesnya, dan mengekstrak artikel-artikel yang relevan.</p></li>
+<li><p>langkah ketiga code melakukan pengecekan, dengan memeriksa satu per satu artikel yang ditemukan di halaman web. Jika sudah berhasil mengambil 10 artikel, prosesnya akan berhenti.
+Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halaman detail artikel tersebut. Jika ada masalah seperti link rusak atau halaman tidak bisa dibuka, kode ini akan mencatat kesalahan tersebut dan langsung melanjutkan ke artikel berikutnya tanpa menghentikan keseluruhan proses pengambilan data.</p></li>
+<li><p>langkah keempat code mengambil judul, tanggal publikasi, dan isi dari setiap artikel yang ada di halaman web. Pertama, kode memproses halaman artikel dengan menggunakan BeautifulSoup untuk memudahkan pencarian elemen HTML yang berisi informasi tersebut. Jika elemen seperti judul, tanggal, atau isi ditemukan, data diambil dan disimpan dalam daftar; jika tidak ditemukan, elemen tersebut akan ditandai sebagai “Tidak ditemukan”. Setiap judul artikel yang berhasil ditemukan akan dicetak di layar.</p></li>
+<li><p>langkah kelima code membuat dua daftar, atau list, yang digunakan dalam proses crawling data. Daftar pertama, base_urls, yang berisi URL halaman web yang akan diambil datanya,  halaman indeks DetikFood. Daftar kedua, categories, berisi kategori yang terkait dengan data yang ingin diambil, yaitu “Makanan”. Keduanya akan digunakan bersama dalam proses crawling untuk menentukan halaman web mana yang harus diakses dan kategori mana yang relevan dengan pencarian.</p></li>
+<li><p>langkah keenam code membuat tiga daftar kosong, judul, tanggal, dan isi, yang akan digunakan untuk menyimpan data hasil crawling. Judul, tanggal, dan isi menyimpan judul dan konten utama artikel, dan daftar tanggal menyimpan tanggal publikasi setiap artikel. Ini mempersiapkan tempat untuk menyimpan data yang akan diambil dari halaman web di masa mendatang.</p></li>
+<li><p>langkah ketujuh membuat code Untuk setiap kombinasi URL dan kategori yang telah dibuat sebelumnya, kode ini melakukan proses iterasi, atau perulangan. Kode akan mengambil data dari beberapa halaman untuk setiap URL, mulai dari halaman 1 hingga 3. Jika jumlah artikel mencapai sepuluh, proses akan dihentikan. Setelah membuat URL baru yang sesuai untuk setiap halaman, fungsi get_data digunakan untuk mengambil data dari halaman tersebut. Untuk mencegah data diambil terlalu cepat, kode menunggu selama dua detik setelah mengambil data dari satu halaman sebelum melanjutkan ke halaman berikutnya.</p></li>
+<li><p>langkah terakhir membuat code untuk mengumpulkan data yang disimpan dalam bentuk daftar judul, tanggal, dan isi, lalu menyusunnya ke dalam bentuk tabel DataFrame menggunakan pustaka pandas. “Judul”, “tanggal”, dan “isi” adalah nama kolom dalam tabel DataFrame. Kode menyimpan tabel ke dalam file CSV dengan nama “Crawl-berita.csv” tanpa index. Setelah itu, Anda dapat membuka dan menganalisis file CSV ini menggunakan aplikasi spreadsheet atau perangkat lunak lain yang mendukung format CSV.</p></li>
+</ol>
+<p><strong>Penjelasan Data</strong></p>
+<p>Data yang diambil berasal dari Website DetikFood, yang merupakan bagian dari portal berita <a class="reference external" href="http://Detik.com">Detik.com</a>, berfokus pada topik makanan, termasuk resep, berita, tips, dan tren makanan terbaru.</p>
+<p>Data diambil menggunakan metode web crawling atau scraping untuk pengumpulan data dan mengarahkan crawler ke <a class="reference external" href="https://food.detik.com/indeks">https://food.detik.com/indeks</a> dan mengumpulkan data makanan.</p>
+<p>contoh data</p>
+<ul class="simple">
+<li><p>judul : Kulineran Seru dr. Richard Lee, Cicip Mooncake Mahal hingga Dessert di China</p></li>
+<li><p>tanggal : Senin, 02 Sep 2024 21:00 WIB</p></li>
+<li><p>isi/deskripsi : Jakarta - dr. Richard Lee mengklarifikasi terkait tuduhan bahan bahaya di produk skincarenya. Terlepas dari usaha skincare, dokter ini juga suka membagikan momen kuliner.</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -487,34 +517,34 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Serunya Shakilla Astari saat Ngopi di Paris
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Manis! Ultah Al Ghazali ke-27 Dirayakan dengan Makan Malam Keluarga
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kulineran Seru dr. Richard Lee, Cicip Mooncake Mahal hingga Dessert di China
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dinar Candy Traktir Penghuni Rumah Singgah dan Kulineran ke Kamboja
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gokil! Pelanggan Ini Hemat Rp 2,3 Juta Gegara Tak Pernah Kasih Tip
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>YouTuber Jepang Pesan Makanan Via Ojol, Terpesona Harganya Murah!
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kisah Mantan Pekerja Restoran Cepat Saji Sukses Jadi Petani
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jijik! Sehari-hari Wanita Ini Masak di dalam Apartemen Penuh Serangga
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WNI Ini Bisa Jajan Wedang hingga Sego Pecel di New York
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Protes Dapat Durian Jelek, Pembeli Ini Dihina Miskin oleh Penjual
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Miris! Wanita Ini Minta Barter Tepung Miliknya untuk Susu Anak
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Duh! YouTuber Ini Nekat Cicip Olahan Ikan Paling Berbahaya
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Unik! Gerai Ini Tawarkan Burger Bentuk UFO dengan Isi Melimpah
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jangan Dibuang! Kantong Teh Hijau Bisa Dimanfaatkan untuk 5 Hal Ini
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Wanita Ini Traktir Burger Tukang Pulpen, Netizen Terharu
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ramen hingga Yakitori, Ini 5 Menu Populer di Warung Jepang Kaki Lima
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mewah! Begini Tampilan Kantin UPH yang Mirip Food Court Mall
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>So Sweet! Pengantar Makanan Ini Dapat Kejutan Ultah dari Pelanggan
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cokelat Dubai jadi Tren di TikTok, Harganya Rp 1,5 Juta per Batang
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Viral! Wanita Ini Buka Toko Kelontong di Bagasi Mobil Mewah
 </pre></div>
 </div>
 </div>
@@ -528,7 +558,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8c1e86cd-86c4-43f2-89d0-c7c2a5c35e62" class="colab-df-container">
+  <div id="df-cc10f898-ca04-4ec6-91ad-3a1ea7b3de97" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -555,63 +585,63 @@ document.write(`
   <tbody>
     <tr>
       <th>0</th>
-      <td>Serunya Shakilla Astari saat Ngopi di Paris</td>
-      <td>Senin, 02 Sep 2024 22:00 WIB</td>
-      <td>Jakarta - Shakilla Astari, wanita yang diisuka...</td>
+      <td>Manis! Ultah Al Ghazali ke-27 Dirayakan dengan...</td>
+      <td>Selasa, 03 Sep 2024 22:00 WIB</td>
+      <td>Jakarta - Ulang tahun Al Ghazali yang ke-27 di...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Kulineran Seru dr. Richard Lee, Cicip Mooncake...</td>
-      <td>Senin, 02 Sep 2024 21:00 WIB</td>
-      <td>Jakarta - dr. Richard Lee mengklarifikasi terk...</td>
+      <td>Dinar Candy Traktir Penghuni Rumah Singgah dan...</td>
+      <td>Selasa, 03 Sep 2024 21:00 WIB</td>
+      <td>Jakarta - Resmi menyandang gelar sarjana, Dina...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Gokil! Pelanggan Ini Hemat Rp 2,3 Juta Gegara ...</td>
-      <td>Senin, 02 Sep 2024 19:30 WIB</td>
-      <td>Jakarta - Memberikan tip menjadi hal wajib saa...</td>
+      <td>YouTuber Jepang Pesan Makanan Via Ojol, Terpes...</td>
+      <td>Selasa, 03 Sep 2024 19:30 WIB</td>
+      <td>Jakarta - YouTuber Jepang satu ini membagikan ...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Kisah Mantan Pekerja Restoran Cepat Saji Sukse...</td>
-      <td>Senin, 02 Sep 2024 19:00 WIB</td>
-      <td>Jakarta - Mengundurkan diri dari posisinya seb...</td>
+      <td>Jijik! Sehari-hari Wanita Ini Masak di dalam A...</td>
+      <td>Selasa, 03 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Seorang wanita sering membagikan kes...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>WNI Ini Bisa Jajan Wedang hingga Sego Pecel di...</td>
-      <td>Senin, 02 Sep 2024 18:00 WIB</td>
-      <td>Jakarta - YouTuber yang tinggal di Amerika ini...</td>
+      <td>Protes Dapat Durian Jelek, Pembeli Ini Dihina ...</td>
+      <td>Selasa, 03 Sep 2024 18:30 WIB</td>
+      <td>Jakarta - Penjual durian ini diboikot netizen ...</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Miris! Wanita Ini Minta Barter Tepung Miliknya...</td>
-      <td>Senin, 02 Sep 2024 17:30 WIB</td>
-      <td>Jakarta - Hal yang dilakukan wanita ini menjad...</td>
+      <td>Duh! YouTuber Ini Nekat Cicip Olahan Ikan Pali...</td>
+      <td>Selasa, 03 Sep 2024 18:00 WIB</td>
+      <td>Jakarta - Ketika menemukan makanan bahaya, seb...</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Unik! Gerai Ini Tawarkan Burger Bentuk UFO den...</td>
-      <td>Senin, 02 Sep 2024 17:00 WIB</td>
-      <td>Jakarta - Burger biasanya terdiri atas tumpuka...</td>
+      <td>Jangan Dibuang! Kantong Teh Hijau Bisa Dimanfa...</td>
+      <td>Selasa, 03 Sep 2024 17:30 WIB</td>
+      <td>Jakarta -\n        \n        Kantong teh hijau...</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>Wanita Ini Traktir Burger Tukang Pulpen, Netiz...</td>
-      <td>Senin, 02 Sep 2024 16:00 WIB</td>
-      <td>Jakarta - Wanita ini membelikan burger untuk t...</td>
+      <td>Ramen hingga Yakitori, Ini 5 Menu Populer di W...</td>
+      <td>Selasa, 03 Sep 2024 17:00 WIB</td>
+      <td>Jakarta -\n        \n        Banyak warung mak...</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Mewah! Begini Tampilan Kantin UPH yang Mirip F...</td>
-      <td>Senin, 02 Sep 2024 15:30 WIB</td>
-      <td>Jakarta - Kantin kampus biasanya tampil sederh...</td>
+      <td>So Sweet! Pengantar Makanan Ini Dapat Kejutan ...</td>
+      <td>Selasa, 03 Sep 2024 16:30 WIB</td>
+      <td>Jakarta - Pengalaman yang membahagiakan kerap ...</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Cokelat Dubai jadi Tren di TikTok, Harganya Rp...</td>
-      <td>Senin, 02 Sep 2024 15:00 WIB</td>
-      <td>Jakarta -\n        \n        Cokelat Dubai ten...</td>
+      <td>Viral! Wanita Ini Buka Toko Kelontong di Bagas...</td>
+      <td>Selasa, 03 Sep 2024 16:00 WIB</td>
+      <td>Jakarta - Dalam unggahan foto, terlihat seoran...</td>
     </tr>
   </tbody>
 </table>
@@ -619,7 +649,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-8c1e86cd-86c4-43f2-89d0-c7c2a5c35e62')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-cc10f898-ca04-4ec6-91ad-3a1ea7b3de97')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -671,12 +701,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-8c1e86cd-86c4-43f2-89d0-c7c2a5c35e62 button.colab-df-convert');
+        document.querySelector('#df-cc10f898-ca04-4ec6-91ad-3a1ea7b3de97 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8c1e86cd-86c4-43f2-89d0-c7c2a5c35e62');
+        const element = document.querySelector('#df-cc10f898-ca04-4ec6-91ad-3a1ea7b3de97');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
