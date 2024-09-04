@@ -478,9 +478,11 @@ Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halama
         <span class="n">content_element</span> <span class="o">=</span> <span class="n">article_soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s2">&quot;detail__body-text&quot;</span><span class="p">)</span>
         <span class="n">content</span> <span class="o">=</span> <span class="n">content_element</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">if</span> <span class="n">content_element</span> <span class="k">else</span> <span class="s2">&quot;Content Not Found&quot;</span>
 
+        <span class="c1"># Menambahkan data ke dalam list</span>
         <span class="n">judul</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
         <span class="n">tanggal</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
         <span class="n">isi</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+        <span class="n">kategori_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">kategori</span><span class="p">)</span>
 
         <span class="nb">print</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Menambahkan jeda waktu 1 detik antara permintaan artikel</span>
@@ -490,9 +492,11 @@ Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halama
 <span class="n">categories</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Makanan&quot;</span><span class="p">]</span>
 
 <span class="c1"># Inisialisasi list untuk menyimpan data</span>
+<span class="n">No</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">judul</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">tanggal</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">isi</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">kategori_list</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># Melakukan iterasi untuk setiap url dan kategori</span>
 <span class="k">for</span> <span class="n">base_url</span><span class="p">,</span> <span class="n">category</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">base_urls</span><span class="p">,</span> <span class="n">categories</span><span class="p">):</span>
@@ -507,8 +511,9 @@ Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halama
 <span class="c1"># Membuat dataframe dari list data</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
     <span class="s2">&quot;judul&quot;</span><span class="p">:</span> <span class="n">judul</span><span class="p">,</span>
+    <span class="s2">&quot;isi&quot;</span><span class="p">:</span> <span class="n">isi</span><span class="p">,</span>
     <span class="s2">&quot;tanggal&quot;</span><span class="p">:</span> <span class="n">tanggal</span><span class="p">,</span>
-    <span class="s2">&quot;isi&quot;</span><span class="p">:</span> <span class="n">isi</span>
+    <span class="s2">&quot;kategori&quot;</span><span class="p">:</span> <span class="n">kategori_list</span>
 <span class="p">})</span>
 
 <span class="c1"># Menyimpan dataframe ke file CSV</span>
@@ -517,34 +522,34 @@ Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halama
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Manis! Ultah Al Ghazali ke-27 Dirayakan dengan Makan Malam Keluarga
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Keseruan Nunung Saat Masak Cumi hingga Jajan Es Kelapa Muda
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dinar Candy Traktir Penghuni Rumah Singgah dan Kulineran ke Kamboja
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Potret Aura Kasih Jajan Buah di Pasar Tradisional hingga Ngerujak
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>YouTuber Jepang Pesan Makanan Via Ojol, Terpesona Harganya Murah!
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Demi Makan Gratis di Resto, Keluarga Ini Sengaja Taruh Kecoak di Makanan
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jijik! Sehari-hari Wanita Ini Masak di dalam Apartemen Penuh Serangga
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penjual Teh Nyentrik Ini Dikritik Karena Minta Honor Rp 126 Juta Sekali Tampil
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Protes Dapat Durian Jelek, Pembeli Ini Dihina Miskin oleh Penjual
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mirip Warlok! 4 Seleb Korea Ini Jajan Sate hingga Nongkrong di Pasar Santa
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Duh! YouTuber Ini Nekat Cicip Olahan Ikan Paling Berbahaya
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5 Aksi Emak-emak Bungkus Makanan Ini Sempat Bikin Heboh
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jangan Dibuang! Kantong Teh Hijau Bisa Dimanfaatkan untuk 5 Hal Ini
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Slurrp! Manis Segar Thai Tea Populer Thailand Kini Buka di Jakarta
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ramen hingga Yakitori, Ini 5 Menu Populer di Warung Jepang Kaki Lima
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5 Kuliner Kaki Lima Jejepangan Viral, Ada yang Punya Mantan Chef
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>So Sweet! Pengantar Makanan Ini Dapat Kejutan Ultah dari Pelanggan
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setelah Gagal 4 Kali, Akhirnya TikToker Berhasil Masak Udang Balon
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Viral! Wanita Ini Buka Toko Kelontong di Bagasi Mobil Mewah
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Terry Putri Jadi Kurir Makanan di Amerika, Sampai ke Kantor Polisi
 </pre></div>
 </div>
 </div>
@@ -558,7 +563,7 @@ Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halama
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cc10f898-ca04-4ec6-91ad-3a1ea7b3de97" class="colab-df-container">
+  <div id="df-07e58694-30bd-4eb6-bda1-629c65f2d695" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -578,70 +583,81 @@ Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halama
     <tr style="text-align: right;">
       <th></th>
       <th>judul</th>
-      <th>tanggal</th>
       <th>isi</th>
+      <th>tanggal</th>
+      <th>kategori</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>Manis! Ultah Al Ghazali ke-27 Dirayakan dengan...</td>
-      <td>Selasa, 03 Sep 2024 22:00 WIB</td>
-      <td>Jakarta - Ulang tahun Al Ghazali yang ke-27 di...</td>
+      <td>Keseruan Nunung Saat Masak Cumi hingga Jajan E...</td>
+      <td>Jakarta - Nunung disorot usai mengaku keluarga...</td>
+      <td>Rabu, 04 Sep 2024 22:00 WIB</td>
+      <td>Makanan</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Dinar Candy Traktir Penghuni Rumah Singgah dan...</td>
-      <td>Selasa, 03 Sep 2024 21:00 WIB</td>
-      <td>Jakarta - Resmi menyandang gelar sarjana, Dina...</td>
+      <td>Potret Aura Kasih Jajan Buah di Pasar Tradisio...</td>
+      <td>Jakarta - Penyanyi cantik Aura Kasih tampil mo...</td>
+      <td>Rabu, 04 Sep 2024 21:00 WIB</td>
+      <td>Makanan</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>YouTuber Jepang Pesan Makanan Via Ojol, Terpes...</td>
-      <td>Selasa, 03 Sep 2024 19:30 WIB</td>
-      <td>Jakarta - YouTuber Jepang satu ini membagikan ...</td>
+      <td>Demi Makan Gratis di Resto, Keluarga Ini Senga...</td>
+      <td>Jakarta - Rombongan keluarga kompak melakukan ...</td>
+      <td>Rabu, 04 Sep 2024 19:30 WIB</td>
+      <td>Makanan</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Jijik! Sehari-hari Wanita Ini Masak di dalam A...</td>
-      <td>Selasa, 03 Sep 2024 19:00 WIB</td>
-      <td>Jakarta - Seorang wanita sering membagikan kes...</td>
+      <td>Penjual Teh Nyentrik Ini Dikritik Karena Minta...</td>
+      <td>Jakarta - Viral karena teh buatannya dicicipi ...</td>
+      <td>Rabu, 04 Sep 2024 19:00 WIB</td>
+      <td>Makanan</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Protes Dapat Durian Jelek, Pembeli Ini Dihina ...</td>
-      <td>Selasa, 03 Sep 2024 18:30 WIB</td>
-      <td>Jakarta - Penjual durian ini diboikot netizen ...</td>
+      <td>Mirip Warlok! 4 Seleb Korea Ini Jajan Sate hin...</td>
+      <td>Jakarta -\n        \n        Saat berkunjung k...</td>
+      <td>Rabu, 04 Sep 2024 18:30 WIB</td>
+      <td>Makanan</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Duh! YouTuber Ini Nekat Cicip Olahan Ikan Pali...</td>
-      <td>Selasa, 03 Sep 2024 18:00 WIB</td>
-      <td>Jakarta - Ketika menemukan makanan bahaya, seb...</td>
+      <td>5 Aksi Emak-emak Bungkus Makanan Ini Sempat Bi...</td>
+      <td>Jakarta -\n        \n        Aksi para ibu-ibu...</td>
+      <td>Rabu, 04 Sep 2024 18:00 WIB</td>
+      <td>Makanan</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Jangan Dibuang! Kantong Teh Hijau Bisa Dimanfa...</td>
-      <td>Selasa, 03 Sep 2024 17:30 WIB</td>
-      <td>Jakarta -\n        \n        Kantong teh hijau...</td>
+      <td>Slurrp! Manis Segar Thai Tea Populer Thailand ...</td>
+      <td>Jakarta - Gerai Thai tea yang terkenal di Bang...</td>
+      <td>Rabu, 04 Sep 2024 17:30 WIB</td>
+      <td>Makanan</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>Ramen hingga Yakitori, Ini 5 Menu Populer di W...</td>
-      <td>Selasa, 03 Sep 2024 17:00 WIB</td>
-      <td>Jakarta -\n        \n        Banyak warung mak...</td>
+      <td>5 Kuliner Kaki Lima Jejepangan Viral, Ada yang...</td>
+      <td>Jakarta -\n        \n        Beberapa tempat m...</td>
+      <td>Rabu, 04 Sep 2024 17:00 WIB</td>
+      <td>Makanan</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>So Sweet! Pengantar Makanan Ini Dapat Kejutan ...</td>
-      <td>Selasa, 03 Sep 2024 16:30 WIB</td>
-      <td>Jakarta - Pengalaman yang membahagiakan kerap ...</td>
+      <td>Setelah Gagal 4 Kali, Akhirnya TikToker Berhas...</td>
+      <td>Jakarta - Udang balon memang tengah viral di T...</td>
+      <td>Rabu, 04 Sep 2024 16:30 WIB</td>
+      <td>Makanan</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Viral! Wanita Ini Buka Toko Kelontong di Bagas...</td>
-      <td>Selasa, 03 Sep 2024 16:00 WIB</td>
-      <td>Jakarta - Dalam unggahan foto, terlihat seoran...</td>
+      <td>Terry Putri Jadi Kurir Makanan di Amerika, Sam...</td>
+      <td>Jakarta - Ikut suami hijrah ke Amerika Serikat...</td>
+      <td>Rabu, 04 Sep 2024 16:00 WIB</td>
+      <td>Makanan</td>
     </tr>
   </tbody>
 </table>
@@ -649,7 +665,7 @@ Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halama
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-cc10f898-ca04-4ec6-91ad-3a1ea7b3de97')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-07e58694-30bd-4eb6-bda1-629c65f2d695')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -701,12 +717,12 @@ Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halama
 
     <script>
       const buttonEl =
-        document.querySelector('#df-cc10f898-ca04-4ec6-91ad-3a1ea7b3de97 button.colab-df-convert');
+        document.querySelector('#df-07e58694-30bd-4eb6-bda1-629c65f2d695 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-cc10f898-ca04-4ec6-91ad-3a1ea7b3de97');
+        const element = document.querySelector('#df-07e58694-30bd-4eb6-bda1-629c65f2d695');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
