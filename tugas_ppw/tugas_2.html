@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>PREPOCECING DAN TF IDF &#8212; Pencarian dan Penambangan Web</title>
+    <title>Tugas 2 Preprocessing Dan TF IDF &#8212; Pencarian dan Penambangan Web</title>
   
   
   
@@ -180,7 +180,7 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="tugas_1.html">Tugas 1 : Crawling Berita</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>PREPOCECING DAN TF IDF</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Tugas 2 Preprocessing Dan TF IDF</strong></a></li>
 </ul>
 
     </div>
@@ -364,7 +364,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>PREPOCECING DAN TF IDF</h1>
+    <h1>Tugas 2 Preprocessing Dan TF IDF</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -378,11 +378,14 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="prepocecing-dan-tf-idf">
-<h1><strong>PREPOCECING DAN TF IDF</strong><a class="headerlink" href="#prepocecing-dan-tf-idf" title="Link to this heading">#</a></h1>
+  <p>Nama : Siti Ma’rifatul Khoiriyah</p>
+<p>Nim : 210411100007</p>
+<p>Kelas : PPW A</p>
+<section class="tex2jax_ignore mathjax_ignore" id="tugas-2-preprocessing-dan-tf-idf">
+<h1><strong>Tugas 2 Preprocessing Dan TF IDF</strong><a class="headerlink" href="#tugas-2-preprocessing-dan-tf-idf" title="Link to this heading">#</a></h1>
 <p><strong>PRE PROCESSING</strong></p>
 <hr class="docutils" />
-<p>Pre-processing adalah langkah-langkah awal dalam pemrosesan teks yang bertujuan untuk membersihkan dan mempersiapkan data teks mentah agar dapat dianalisis lebih lanjut atau digunakan dalam model pembelajaran mesin. Berikut adalah beberapa langkah umum dalam pre-processing teks:</p>
+<p>Preprocessing adalah proses membersihkan dan mempersiapkan data mentah agar siap digunakan oleh model machine learning. Ini meliputi penanganan data yang hilang, normalisasi, mengubah data kategori menjadi angka, dan membersihkan teks. Tujuannya agar data lebih mudah dipahami dan diolah oleh model untuk hasil yang lebih akurat, Berikut adalah beberapa langkah umum dalam pre-processing teks:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
@@ -439,7 +442,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-ad50e529-3f96-450b-8ec8-c514695ec964" class="colab-df-container">
+  <div id="df-a965de91-c497-41c6-8b43-c53c9720eeab" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -506,7 +509,7 @@ document.write(`
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-ad50e529-3f96-450b-8ec8-c514695ec964')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a965de91-c497-41c6-8b43-c53c9720eeab')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -558,12 +561,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-ad50e529-3f96-450b-8ec8-c514695ec964 button.colab-df-convert');
+        document.querySelector('#df-a965de91-c497-41c6-8b43-c53c9720eeab button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-ad50e529-3f96-450b-8ec8-c514695ec964');
+        const element = document.querySelector('#df-a965de91-c497-41c6-8b43-c53c9720eeab');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -583,8 +586,8 @@ document.write(`
   </div>
 
 
-<div id="df-f73134a8-8fa6-4508-b4d3-c2c3a471cc2d">
-  <button class="colab-df-quickchart" onclick="quickchart('df-f73134a8-8fa6-4508-b4d3-c2c3a471cc2d')"
+<div id="df-65fe39a6-1b06-4a6d-9cf9-da874cbe1f4e">
+  <button class="colab-df-quickchart" onclick="quickchart('df-65fe39a6-1b06-4a6d-9cf9-da874cbe1f4e')"
             title="Suggest charts"
             style="display:none;">
 
@@ -703,7 +706,7 @@ document.write(`
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-f73134a8-8fa6-4508-b4d3-c2c3a471cc2d button');
+        document.querySelector('#df-65fe39a6-1b06-4a6d-9cf9-da874cbe1f4e button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -717,7 +720,7 @@ document.write(`
 <ol class="arabic simple">
 <li><p>CLEANSING</p></li>
 </ol>
-<p>Tahapan proses cleansing data merupakan tahap pembersihan kata dari atribut yang tidak berpengaruh terhadap hasil klasifikasi sentimen. Komponen dokumen review memiliki beberapa atribut tidak berpengaruh terhadap sentimen diataranya url, html, emoji, simbol, angka dan tanda baca (~!&#64;#$%^&amp;*{}&lt;&gt;:|). Atribut yang tidak berpengaruh tersebut kemudian akan dihapus dan akan digantikan dengan karakter spasi</p>
+<p>Tahapan proses cleansing data merupakan tahap pembersihan kata dari atribut yang tidak berpengaruh terhadap hasil klasifikasi sentimen. Komponen dokumen review memiliki beberapa atribut tidak berpengaruh terhadap sentimen diataranya url, html, emoji, simbol, angka dan tanda baca (~!&#64;#$%^&amp;*{}&lt;&gt;:|). Atribut yang tidak berpengaruh tersebut kemudian akan dihapus dan akan digantikan dengan karakter spasi.atribut-atribut tersebut dihapus dari teks untuk menghindari kebisingan (noise) dalam data. Setelah penghapusan, elemen-elemen ini digantikan dengan karakter spasi agar struktur kalimat tetap terjaga. Dengan pembersihan ini, data menjadi lebih fokus pada kata-kata atau frasa yang benar-benar relevan untuk menentukan sentimen, sehingga meningkatkan akurasi model dalam memprediksi sentimen.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
@@ -760,7 +763,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-3eab642c-b1e2-4b9d-acc0-23afb23c2eb0" class="colab-df-container">
+  <div id="df-86ab4a15-72fc-4e57-8fbd-79b99509aeed" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -833,7 +836,7 @@ document.write(`
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-3eab642c-b1e2-4b9d-acc0-23afb23c2eb0')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-86ab4a15-72fc-4e57-8fbd-79b99509aeed')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -885,12 +888,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-3eab642c-b1e2-4b9d-acc0-23afb23c2eb0 button.colab-df-convert');
+        document.querySelector('#df-86ab4a15-72fc-4e57-8fbd-79b99509aeed button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-3eab642c-b1e2-4b9d-acc0-23afb23c2eb0');
+        const element = document.querySelector('#df-86ab4a15-72fc-4e57-8fbd-79b99509aeed');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -910,8 +913,8 @@ document.write(`
   </div>
 
 
-<div id="df-65112bc3-53de-4d67-aa05-89caa11a17ee">
-  <button class="colab-df-quickchart" onclick="quickchart('df-65112bc3-53de-4d67-aa05-89caa11a17ee')"
+<div id="df-6b2c15fe-0a04-4108-b6be-ef9b77e36aba">
+  <button class="colab-df-quickchart" onclick="quickchart('df-6b2c15fe-0a04-4108-b6be-ef9b77e36aba')"
             title="Suggest charts"
             style="display:none;">
 
@@ -1030,7 +1033,7 @@ document.write(`
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-65112bc3-53de-4d67-aa05-89caa11a17ee button');
+        document.querySelector('#df-6b2c15fe-0a04-4108-b6be-ef9b77e36aba button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -1044,7 +1047,7 @@ document.write(`
 <ol class="arabic simple" start="2">
 <li><p>CASE FOLDING</p></li>
 </ol>
-<p>Pada tahap case folding huruf kapital pada semua dokumen ulasan diubah menjadi huruf kecil atau disebut lowercase. Hal ini bertujuan agar menghiangkan redudansi data yang hanya berbeda pada hurufnya saja.</p>
+<p>Pada tahap case folding huruf kapital pada semua dokumen ulasan diubah menjadi huruf kecil atau disebut lowercase. Hal ini bertujuan agar menghiangkan redudansi data yang hanya berbeda pada hurufnya saja. Misalnya, kata “Makanan” dan “makanan” dianggap sama dalam konteks analisis teks, tetapi tanpa case folding, keduanya akan dianggap berbeda oleh komputer. Dengan mengubah semua huruf menjadi kecil, kita menyatukan semua variasi penulisan menjadi satu bentuk yang konsisten, sehingga menghindari perhitungan yang berlebihan atau salah interpretasi data.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">case_folding</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
@@ -1062,7 +1065,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cb4e378d-9f73-42ef-8323-90dc594ca1ba" class="colab-df-container">
+  <div id="df-fe1c8b28-adc9-4894-a4a1-5d71c7d526e5" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1141,7 +1144,7 @@ document.write(`
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-cb4e378d-9f73-42ef-8323-90dc594ca1ba')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-fe1c8b28-adc9-4894-a4a1-5d71c7d526e5')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1193,12 +1196,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-cb4e378d-9f73-42ef-8323-90dc594ca1ba button.colab-df-convert');
+        document.querySelector('#df-fe1c8b28-adc9-4894-a4a1-5d71c7d526e5 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-cb4e378d-9f73-42ef-8323-90dc594ca1ba');
+        const element = document.querySelector('#df-fe1c8b28-adc9-4894-a4a1-5d71c7d526e5');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1218,8 +1221,8 @@ document.write(`
   </div>
 
 
-<div id="df-4ac9fe47-bbb7-4eeb-8978-fbffc59e057a">
-  <button class="colab-df-quickchart" onclick="quickchart('df-4ac9fe47-bbb7-4eeb-8978-fbffc59e057a')"
+<div id="df-a6d5ef81-1668-425a-aa5c-e82f14950b88">
+  <button class="colab-df-quickchart" onclick="quickchart('df-a6d5ef81-1668-425a-aa5c-e82f14950b88')"
             title="Suggest charts"
             style="display:none;">
 
@@ -1338,7 +1341,7 @@ document.write(`
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-4ac9fe47-bbb7-4eeb-8978-fbffc59e057a button');
+        document.querySelector('#df-a6d5ef81-1668-425a-aa5c-e82f14950b88 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -1352,7 +1355,8 @@ document.write(`
 <ol class="arabic simple" start="3">
 <li><p>TOKENIZATION</p></li>
 </ol>
-<p>Tahap Tokenization merupakan pemotongan kata berdasarkan tiap kata yang menyusunnya menjadi potongan tunggal. Kata dalam dokumen yang dimaksud adalah kata yang dipisah oleh spasi, sehingga proses tokenisasi mengandalkan karakter spasi pada dokumen untuk melakukan pemisahan kata.</p>
+<p>Tahap Tokenization merupakan pemotongan kata berdasarkan tiap kata yang menyusunnya menjadi potongan tunggal. Kata dalam dokumen yang dimaksud adalah kata yang dipisah oleh spasi, sehingga proses tokenisasi mengandalkan karakter spasi pada dokumen untuk melakukan pemisahan kata.
+contoh, kalimat “Saya suka makan pizza” akan dipecah menjadi token [“Saya”, “suka”, “makan”, “pizza”].</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
@@ -1367,7 +1371,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0d706e5f-c444-4181-9001-f2df460ba3e3" class="colab-df-container">
+  <div id="df-17327de8-00f8-42eb-b1a7-6b9e2e743d4b" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1452,7 +1456,7 @@ document.write(`
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-0d706e5f-c444-4181-9001-f2df460ba3e3')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-17327de8-00f8-42eb-b1a7-6b9e2e743d4b')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1504,12 +1508,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-0d706e5f-c444-4181-9001-f2df460ba3e3 button.colab-df-convert');
+        document.querySelector('#df-17327de8-00f8-42eb-b1a7-6b9e2e743d4b button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-0d706e5f-c444-4181-9001-f2df460ba3e3');
+        const element = document.querySelector('#df-17327de8-00f8-42eb-b1a7-6b9e2e743d4b');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1529,8 +1533,8 @@ document.write(`
   </div>
 
 
-<div id="df-c9fd7ec6-d33d-4ba7-89f4-dc6229852219">
-  <button class="colab-df-quickchart" onclick="quickchart('df-c9fd7ec6-d33d-4ba7-89f4-dc6229852219')"
+<div id="df-15bf8934-4a19-4c44-b41c-2eb2125ab42d">
+  <button class="colab-df-quickchart" onclick="quickchart('df-15bf8934-4a19-4c44-b41c-2eb2125ab42d')"
             title="Suggest charts"
             style="display:none;">
 
@@ -1649,7 +1653,7 @@ document.write(`
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-c9fd7ec6-d33d-4ba7-89f4-dc6229852219 button');
+        document.querySelector('#df-15bf8934-4a19-4c44-b41c-2eb2125ab42d button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -1663,7 +1667,8 @@ document.write(`
 <ol class="arabic simple" start="4">
 <li><p>STOPWORD REMOVAL</p></li>
 </ol>
-<p>Dalam tahapan proses Stopword Removal kata yang tidak memiliki pengaruh signifikan dalam kalimat akan dihilangkan. Dalam pre processing ini penulis menghapus stopword pada data ulasan berdasar daftar kalimat stopword diantaranya yaitu “yang”, “dan”, “di”, “dari”, dll.</p>
+<p>Dalam tahapan proses Stopword Removal kata yang tidak memiliki pengaruh signifikan dalam kalimat akan dihilangkan. Dalam pre processing ini penulis menghapus stopword pada data ulasan berdasar daftar kalimat stopword diantaranya yaitu “yang”, “dan”, “di”, “dari”, dll.
+contoh, kalimat “Saya pergi ke pasar dan membeli buah” akan diubah menjadi “Saya pergi pasar membeli buah” setelah proses stopword removal.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
@@ -1692,7 +1697,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-d1b19770-cb5a-4c1d-b22e-ee8c53851cfe" class="colab-df-container">
+  <div id="df-dfc0ec69-62ab-40cb-968f-3fc68a0f9477" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1783,7 +1788,7 @@ document.write(`
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-d1b19770-cb5a-4c1d-b22e-ee8c53851cfe')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-dfc0ec69-62ab-40cb-968f-3fc68a0f9477')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1835,12 +1840,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-d1b19770-cb5a-4c1d-b22e-ee8c53851cfe button.colab-df-convert');
+        document.querySelector('#df-dfc0ec69-62ab-40cb-968f-3fc68a0f9477 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-d1b19770-cb5a-4c1d-b22e-ee8c53851cfe');
+        const element = document.querySelector('#df-dfc0ec69-62ab-40cb-968f-3fc68a0f9477');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1860,8 +1865,8 @@ document.write(`
   </div>
 
 
-<div id="df-b315b939-4cc3-48d4-9c16-e5b969032a85">
-  <button class="colab-df-quickchart" onclick="quickchart('df-b315b939-4cc3-48d4-9c16-e5b969032a85')"
+<div id="df-09e5deaa-5fe4-4f9b-a92e-0449f2e72c7f">
+  <button class="colab-df-quickchart" onclick="quickchart('df-09e5deaa-5fe4-4f9b-a92e-0449f2e72c7f')"
             title="Suggest charts"
             style="display:none;">
 
@@ -1980,7 +1985,7 @@ document.write(`
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-b315b939-4cc3-48d4-9c16-e5b969032a85 button');
+        document.querySelector('#df-09e5deaa-5fe4-4f9b-a92e-0449f2e72c7f button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -1999,7 +2004,9 @@ document.write(`
 </div>
 </div>
 <p>TF-IDF (Term Frequency-Inverse Document Frequency)</p>
-<p>TF-IDF adalah metode statistik yang digunakan untuk mengevaluasi pentingnya suatu kata dalam sebuah dokumen relatif terhadap koleksi dokumen lainnya. TF-IDF sering digunakan dalam tugas seperti penggalian teks, penambangan informasi, dan pemodelan pembelajaran mesin berbasis teks.</p>
+<p>TF-IDF adalah metode statistik yang digunakan untuk mengevaluasi pentingnya suatu kata dalam sebuah dokumen relatif terhadap koleksi dokumen lainnya. TF-IDF sering digunakan dalam tugas seperti penggalian teks, penambangan informasi, dan pemodelan pembelajaran mesin berbasis teks.
+Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam dokumen, dan Inverse Document Frequency (IDF), yang menilai seberapa jarang kata tersebut muncul di seluruh dokumen dalam koleksi.</p>
+<p>TF-IDF bekerja dengan memberikan bobot lebih tinggi pada kata-kata yang sering muncul dalam sebuah dokumen, tetapi jarang muncul di dokumen lain, sehingga membantu mengidentifikasi kata-kata yang paling relevan. Kata-kata umum yang muncul di banyak dokumen, seperti “dan” atau “yang,” akan mendapatkan bobot rendah karena dianggap kurang informatif.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -2032,7 +2039,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-7f1f6a02-e7f4-42f9-a558-3feebbc31d3e" class="colab-df-container">
+  <div id="df-1715371e-9e15-41f3-8481-33c222fb455e" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2322,7 +2329,7 @@ document.write(`
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-7f1f6a02-e7f4-42f9-a558-3feebbc31d3e')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-1715371e-9e15-41f3-8481-33c222fb455e')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -2374,12 +2381,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-7f1f6a02-e7f4-42f9-a558-3feebbc31d3e button.colab-df-convert');
+        document.querySelector('#df-1715371e-9e15-41f3-8481-33c222fb455e button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-7f1f6a02-e7f4-42f9-a558-3feebbc31d3e');
+        const element = document.querySelector('#df-1715371e-9e15-41f3-8481-33c222fb455e');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2399,8 +2406,8 @@ document.write(`
   </div>
 
 
-<div id="df-c8ce7b77-2df8-464c-b2e6-97c7ae0bf69c">
-  <button class="colab-df-quickchart" onclick="quickchart('df-c8ce7b77-2df8-464c-b2e6-97c7ae0bf69c')"
+<div id="df-e6a0c5b7-0869-4f96-ae05-d99c580f5562">
+  <button class="colab-df-quickchart" onclick="quickchart('df-e6a0c5b7-0869-4f96-ae05-d99c580f5562')"
             title="Suggest charts"
             style="display:none;">
 
@@ -2519,7 +2526,7 @@ document.write(`
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-c8ce7b77-2df8-464c-b2e6-97c7ae0bf69c button');
+        document.querySelector('#df-e6a0c5b7-0869-4f96-ae05-d99c580f5562 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
