@@ -235,7 +235,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/ifaaa88/PPW" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -252,7 +252,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftugas_ppw/tugas_2.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ifaaa88/PPW/issues/new?title=Issue%20on%20page%20%2Ftugas_ppw/tugas_2.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -394,39 +394,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="nn">&lt;ipython-input-1-d5df0069828e&gt;</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/drive.py</span> in <span class="ni">mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, readonly)</span>
-<span class="g g-Whitespace">     </span><span class="mi">98</span> <span class="k">def</span> <span class="nf">mount</span><span class="p">(</span><span class="n">mountpoint</span><span class="p">,</span> <span class="n">force_remount</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">timeout_ms</span><span class="o">=</span><span class="mi">120000</span><span class="p">,</span> <span class="n">readonly</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">99</span><span class="w">   </span><span class="sd">&quot;&quot;&quot;Mount your Google Drive at the specified mountpoint path.&quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">100</span>   <span class="k">return</span> <span class="n">_mount</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">101</span>       <span class="n">mountpoint</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">102</span>       <span class="n">force_remount</span><span class="o">=</span><span class="n">force_remount</span><span class="p">,</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/drive.py</span> in <span class="ni">_mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, ephemeral, readonly)</span>
-<span class="g g-Whitespace">    </span><span class="mi">131</span>   <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">132</span>   <span class="k">if</span> <span class="n">ephemeral</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">133</span>     <span class="n">_message</span><span class="o">.</span><span class="n">blocking_request</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">134</span>         <span class="s1">&#39;request_auth&#39;</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">135</span>         <span class="n">request</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;authType&#39;</span><span class="p">:</span> <span class="s1">&#39;dfs_ephemeral&#39;</span><span class="p">},</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/_message.py</span> in <span class="ni">blocking_request</span><span class="nt">(request_type, request, timeout_sec, parent)</span>
-<span class="g g-Whitespace">    </span><span class="mi">174</span>       <span class="n">request_type</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="n">parent</span><span class="p">,</span> <span class="n">expect_reply</span><span class="o">=</span><span class="kc">True</span>
-<span class="g g-Whitespace">    </span><span class="mi">175</span>   <span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">176</span>   <span class="k">return</span> <span class="n">read_reply_from_input</span><span class="p">(</span><span class="n">request_id</span><span class="p">,</span> <span class="n">timeout_sec</span><span class="p">)</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/_message.py</span> in <span class="ni">read_reply_from_input</span><span class="nt">(message_id, timeout_sec)</span>
-<span class="g g-Whitespace">     </span><span class="mi">94</span>     <span class="n">reply</span> <span class="o">=</span> <span class="n">_read_next_input_message</span><span class="p">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="k">if</span> <span class="n">reply</span> <span class="o">==</span> <span class="n">_NOT_READY</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
-<span class="ne">---&gt; </span><span class="mi">96</span>       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.025</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">97</span>       <span class="k">continue</span>
-<span class="g g-Whitespace">     </span><span class="mi">98</span>     <span class="k">if</span> <span class="p">(</span>
-
-<span class="ne">KeyboardInterrupt</span>: 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(&quot;/content/drive&quot;, force_remount=True).
 </pre></div>
 </div>
 </div>
@@ -442,7 +410,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a965de91-c497-41c6-8b43-c53c9720eeab" class="colab-df-container">
+  <div id="df-0babd92a-61ba-4f3c-bc0a-c8fba5e1bdea" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -470,54 +438,54 @@ document.write(`
   <tbody>
     <tr>
       <th>0</th>
-      <td>Warung Tenda Jepang Ini Punya Chicken Katsu Cu...</td>
-      <td>Minggu, 08 Sep 2024 12:00 WIB</td>
-      <td>Jakarta - Warung Jepang tendaan di Fatmawati i...</td>
+      <td>Salut! Remaja Difabel Semangat Jualan Minuman ...</td>
+      <td>Rabu, 11 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Seorang remaja difabel berhasil meny...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>10 Warmindo yang Punya Menu Mie Nyemek dan Mie...</td>
-      <td>Minggu, 08 Sep 2024 11:00 WIB</td>
-      <td>Jakarta - Warung mie instan atau warmindo kian...</td>
+      <td>Remaja Ini Dipaksa Jualan Makanan, Dagangannya...</td>
+      <td>Rabu, 11 Sep 2024 18:30 WIB</td>
+      <td>Jakarta - Awalnya remaja ini dipaksa untuk jua...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3 Resep Gorengan Populer yang Renyah Untuk Cam...</td>
-      <td>Minggu, 08 Sep 2024 10:30 WIB</td>
-      <td>Tentang Bahan Langkah Jakarta - Di akhir pekan...</td>
+      <td>Makanan di Luar Angkasa Disebut Hambar Rasanya...</td>
+      <td>Rabu, 11 Sep 2024 18:00 WIB</td>
+      <td>Jakarta - Pernah membayangkan bagaimana kehidu...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>5 Etiket Makan Buah Secara Formal, Ternyata Be...</td>
-      <td>Minggu, 08 Sep 2024 10:00 WIB</td>
-      <td>Jakarta - Etiket makan formal banyak dibagikan...</td>
+      <td>Aksi Bule Saat Pesan Makanan Via Ojol, Kocak h...</td>
+      <td>Rabu, 11 Sep 2024 17:30 WIB</td>
+      <td>Jakarta - Pesan makanan via aplikasi ojek onli...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Resep Ayam Ungkep Serai yang Sedap Berbumbu Re...</td>
-      <td>Minggu, 08 Sep 2024 09:00 WIB</td>
-      <td>Tentang Bahan Langkah Jakarta - Selain ayam go...</td>
+      <td>Miris! Nasi Kotak Atlet PON Aceh-Sumut Terlalu...</td>
+      <td>Rabu, 11 Sep 2024 17:00 WIB</td>
+      <td>Jakarta - Pagelaran Pekan Olahraga Nasional (P...</td>
       <td>Makanan</td>
     </tr>
   </tbody>
 </table>
 </div>
     <div class="colab-df-buttons">
-
+      
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-a965de91-c497-41c6-8b43-c53c9720eeab')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-0babd92a-61ba-4f3c-bc0a-c8fba5e1bdea')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
-
+      
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
   </svg>
     </button>
-
+    
   <style>
     .colab-df-container {
       display:flex;
@@ -561,12 +529,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-a965de91-c497-41c6-8b43-c53c9720eeab button.colab-df-convert');
+        document.querySelector('#df-0babd92a-61ba-4f3c-bc0a-c8fba5e1bdea button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-a965de91-c497-41c6-8b43-c53c9720eeab');
+        const element = document.querySelector('#df-0babd92a-61ba-4f3c-bc0a-c8fba5e1bdea');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -584,138 +552,10 @@ document.write(`
       }
     </script>
   </div>
-
-
-<div id="df-65fe39a6-1b06-4a6d-9cf9-da874cbe1f4e">
-  <button class="colab-df-quickchart" onclick="quickchart('df-65fe39a6-1b06-4a6d-9cf9-da874cbe1f4e')"
-            title="Suggest charts"
-            style="display:none;">
-
-<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-     width="24px">
-    <g>
-        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-    </g>
-</svg>
-  </button>
-
-<style>
-  .colab-df-quickchart {
-      --bg-color: #E8F0FE;
-      --fill-color: #1967D2;
-      --hover-bg-color: #E2EBFA;
-      --hover-fill-color: #174EA6;
-      --disabled-fill-color: #AAA;
-      --disabled-bg-color: #DDD;
-  }
-
-  [theme=dark] .colab-df-quickchart {
-      --bg-color: #3B4455;
-      --fill-color: #D2E3FC;
-      --hover-bg-color: #434B5C;
-      --hover-fill-color: #FFFFFF;
-      --disabled-bg-color: #3B4455;
-      --disabled-fill-color: #666;
-  }
-
-  .colab-df-quickchart {
-    background-color: var(--bg-color);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    fill: var(--fill-color);
-    height: 32px;
-    padding: 0;
-    width: 32px;
-  }
-
-  .colab-df-quickchart:hover {
-    background-color: var(--hover-bg-color);
-    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
-    fill: var(--button-hover-fill-color);
-  }
-
-  .colab-df-quickchart-complete:disabled,
-  .colab-df-quickchart-complete:disabled:hover {
-    background-color: var(--disabled-bg-color);
-    fill: var(--disabled-fill-color);
-    box-shadow: none;
-  }
-
-  .colab-df-spinner {
-    border: 2px solid var(--fill-color);
-    border-color: transparent;
-    border-bottom-color: var(--fill-color);
-    animation:
-      spin 1s steps(1) infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-      border-left-color: var(--fill-color);
-    }
-    20% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    30% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-      border-right-color: var(--fill-color);
-    }
-    40% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    60% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-    }
-    80% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-bottom-color: var(--fill-color);
-    }
-    90% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-    }
-  }
-</style>
-
-  <script>
-    async function quickchart(key) {
-      const quickchartButtonEl =
-        document.querySelector('#' + key + ' button');
-      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
-      quickchartButtonEl.classList.add('colab-df-spinner');
-      try {
-        const charts = await google.colab.kernel.invokeFunction(
-            'suggestCharts', [key], {});
-      } catch (error) {
-        console.error('Error during call to suggestCharts:', error);
-      }
-      quickchartButtonEl.classList.remove('colab-df-spinner');
-      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
-    }
-    (() => {
-      let quickchartButtonEl =
-        document.querySelector('#df-65fe39a6-1b06-4a6d-9cf9-da874cbe1f4e button');
-      quickchartButtonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-    })();
-  </script>
-</div>
-
+  
     </div>
   </div>
-</div></div>
+  </div></div>
 </div>
 <ol class="arabic simple">
 <li><p>CLEANSING</p></li>
@@ -763,7 +603,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-86ab4a15-72fc-4e57-8fbd-79b99509aeed" class="colab-df-container">
+  <div id="df-eb69360a-9b14-4801-822c-6f2269f6476a" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -792,59 +632,59 @@ document.write(`
   <tbody>
     <tr>
       <th>0</th>
-      <td>Warung Tenda Jepang Ini Punya Chicken Katsu Cu...</td>
-      <td>Minggu, 08 Sep 2024 12:00 WIB</td>
-      <td>Jakarta - Warung Jepang tendaan di Fatmawati i...</td>
+      <td>Salut! Remaja Difabel Semangat Jualan Minuman ...</td>
+      <td>Rabu, 11 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Seorang remaja difabel berhasil meny...</td>
       <td>Makanan</td>
-      <td>Jakarta  Warung Jepang tendaan di Fatmawati in...</td>
+      <td>Jakarta  Seorang remaja difabel berhasil menye...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>10 Warmindo yang Punya Menu Mie Nyemek dan Mie...</td>
-      <td>Minggu, 08 Sep 2024 11:00 WIB</td>
-      <td>Jakarta - Warung mie instan atau warmindo kian...</td>
+      <td>Remaja Ini Dipaksa Jualan Makanan, Dagangannya...</td>
+      <td>Rabu, 11 Sep 2024 18:30 WIB</td>
+      <td>Jakarta - Awalnya remaja ini dipaksa untuk jua...</td>
       <td>Makanan</td>
-      <td>Jakarta  Warung mie instan atau warmindo kian ...</td>
+      <td>Jakarta  Awalnya remaja ini dipaksa untuk jual...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3 Resep Gorengan Populer yang Renyah Untuk Cam...</td>
-      <td>Minggu, 08 Sep 2024 10:30 WIB</td>
-      <td>Tentang Bahan Langkah Jakarta - Di akhir pekan...</td>
+      <td>Makanan di Luar Angkasa Disebut Hambar Rasanya...</td>
+      <td>Rabu, 11 Sep 2024 18:00 WIB</td>
+      <td>Jakarta - Pernah membayangkan bagaimana kehidu...</td>
       <td>Makanan</td>
-      <td>Tentang Bahan Langkah Jakarta  Di akhir pekan ...</td>
+      <td>Jakarta  Pernah membayangkan bagaimana kehidup...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>5 Etiket Makan Buah Secara Formal, Ternyata Be...</td>
-      <td>Minggu, 08 Sep 2024 10:00 WIB</td>
-      <td>Jakarta - Etiket makan formal banyak dibagikan...</td>
+      <td>Aksi Bule Saat Pesan Makanan Via Ojol, Kocak h...</td>
+      <td>Rabu, 11 Sep 2024 17:30 WIB</td>
+      <td>Jakarta - Pesan makanan via aplikasi ojek onli...</td>
       <td>Makanan</td>
-      <td>Jakarta  Etiket makan formal banyak dibagikan ...</td>
+      <td>Jakarta  Pesan makanan via aplikasi ojek onlin...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Resep Ayam Ungkep Serai yang Sedap Berbumbu Re...</td>
-      <td>Minggu, 08 Sep 2024 09:00 WIB</td>
-      <td>Tentang Bahan Langkah Jakarta - Selain ayam go...</td>
+      <td>Miris! Nasi Kotak Atlet PON Aceh-Sumut Terlalu...</td>
+      <td>Rabu, 11 Sep 2024 17:00 WIB</td>
+      <td>Jakarta - Pagelaran Pekan Olahraga Nasional (P...</td>
       <td>Makanan</td>
-      <td>Tentang Bahan Langkah Jakarta  Selain ayam gor...</td>
+      <td>Jakarta  Pagelaran Pekan Olahraga Nasional PON...</td>
     </tr>
   </tbody>
 </table>
 </div>
     <div class="colab-df-buttons">
-
+      
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-86ab4a15-72fc-4e57-8fbd-79b99509aeed')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-eb69360a-9b14-4801-822c-6f2269f6476a')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
-
+      
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
   </svg>
     </button>
-
+    
   <style>
     .colab-df-container {
       display:flex;
@@ -888,12 +728,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-86ab4a15-72fc-4e57-8fbd-79b99509aeed button.colab-df-convert');
+        document.querySelector('#df-eb69360a-9b14-4801-822c-6f2269f6476a button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-86ab4a15-72fc-4e57-8fbd-79b99509aeed');
+        const element = document.querySelector('#df-eb69360a-9b14-4801-822c-6f2269f6476a');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -911,138 +751,10 @@ document.write(`
       }
     </script>
   </div>
-
-
-<div id="df-6b2c15fe-0a04-4108-b6be-ef9b77e36aba">
-  <button class="colab-df-quickchart" onclick="quickchart('df-6b2c15fe-0a04-4108-b6be-ef9b77e36aba')"
-            title="Suggest charts"
-            style="display:none;">
-
-<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-     width="24px">
-    <g>
-        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-    </g>
-</svg>
-  </button>
-
-<style>
-  .colab-df-quickchart {
-      --bg-color: #E8F0FE;
-      --fill-color: #1967D2;
-      --hover-bg-color: #E2EBFA;
-      --hover-fill-color: #174EA6;
-      --disabled-fill-color: #AAA;
-      --disabled-bg-color: #DDD;
-  }
-
-  [theme=dark] .colab-df-quickchart {
-      --bg-color: #3B4455;
-      --fill-color: #D2E3FC;
-      --hover-bg-color: #434B5C;
-      --hover-fill-color: #FFFFFF;
-      --disabled-bg-color: #3B4455;
-      --disabled-fill-color: #666;
-  }
-
-  .colab-df-quickchart {
-    background-color: var(--bg-color);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    fill: var(--fill-color);
-    height: 32px;
-    padding: 0;
-    width: 32px;
-  }
-
-  .colab-df-quickchart:hover {
-    background-color: var(--hover-bg-color);
-    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
-    fill: var(--button-hover-fill-color);
-  }
-
-  .colab-df-quickchart-complete:disabled,
-  .colab-df-quickchart-complete:disabled:hover {
-    background-color: var(--disabled-bg-color);
-    fill: var(--disabled-fill-color);
-    box-shadow: none;
-  }
-
-  .colab-df-spinner {
-    border: 2px solid var(--fill-color);
-    border-color: transparent;
-    border-bottom-color: var(--fill-color);
-    animation:
-      spin 1s steps(1) infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-      border-left-color: var(--fill-color);
-    }
-    20% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    30% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-      border-right-color: var(--fill-color);
-    }
-    40% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    60% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-    }
-    80% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-bottom-color: var(--fill-color);
-    }
-    90% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-    }
-  }
-</style>
-
-  <script>
-    async function quickchart(key) {
-      const quickchartButtonEl =
-        document.querySelector('#' + key + ' button');
-      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
-      quickchartButtonEl.classList.add('colab-df-spinner');
-      try {
-        const charts = await google.colab.kernel.invokeFunction(
-            'suggestCharts', [key], {});
-      } catch (error) {
-        console.error('Error during call to suggestCharts:', error);
-      }
-      quickchartButtonEl.classList.remove('colab-df-spinner');
-      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
-    }
-    (() => {
-      let quickchartButtonEl =
-        document.querySelector('#df-6b2c15fe-0a04-4108-b6be-ef9b77e36aba button');
-      quickchartButtonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-    })();
-  </script>
-</div>
-
+  
     </div>
   </div>
-</div></div>
+  </div></div>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>CASE FOLDING</p></li>
@@ -1065,7 +777,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-fe1c8b28-adc9-4894-a4a1-5d71c7d526e5" class="colab-df-container">
+  <div id="df-bbf43af9-6fc1-48fc-9cda-0718a61b62af" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1095,64 +807,64 @@ document.write(`
   <tbody>
     <tr>
       <th>0</th>
-      <td>Warung Tenda Jepang Ini Punya Chicken Katsu Cu...</td>
-      <td>Minggu, 08 Sep 2024 12:00 WIB</td>
-      <td>Jakarta - Warung Jepang tendaan di Fatmawati i...</td>
+      <td>Salut! Remaja Difabel Semangat Jualan Minuman ...</td>
+      <td>Rabu, 11 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Seorang remaja difabel berhasil meny...</td>
       <td>Makanan</td>
-      <td>Jakarta  Warung Jepang tendaan di Fatmawati in...</td>
-      <td>jakarta  warung jepang tendaan di fatmawati in...</td>
+      <td>Jakarta  Seorang remaja difabel berhasil menye...</td>
+      <td>jakarta  seorang remaja difabel berhasil menye...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>10 Warmindo yang Punya Menu Mie Nyemek dan Mie...</td>
-      <td>Minggu, 08 Sep 2024 11:00 WIB</td>
-      <td>Jakarta - Warung mie instan atau warmindo kian...</td>
+      <td>Remaja Ini Dipaksa Jualan Makanan, Dagangannya...</td>
+      <td>Rabu, 11 Sep 2024 18:30 WIB</td>
+      <td>Jakarta - Awalnya remaja ini dipaksa untuk jua...</td>
       <td>Makanan</td>
-      <td>Jakarta  Warung mie instan atau warmindo kian ...</td>
-      <td>jakarta  warung mie instan atau warmindo kian ...</td>
+      <td>Jakarta  Awalnya remaja ini dipaksa untuk jual...</td>
+      <td>jakarta  awalnya remaja ini dipaksa untuk jual...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3 Resep Gorengan Populer yang Renyah Untuk Cam...</td>
-      <td>Minggu, 08 Sep 2024 10:30 WIB</td>
-      <td>Tentang Bahan Langkah Jakarta - Di akhir pekan...</td>
+      <td>Makanan di Luar Angkasa Disebut Hambar Rasanya...</td>
+      <td>Rabu, 11 Sep 2024 18:00 WIB</td>
+      <td>Jakarta - Pernah membayangkan bagaimana kehidu...</td>
       <td>Makanan</td>
-      <td>Tentang Bahan Langkah Jakarta  Di akhir pekan ...</td>
-      <td>tentang bahan langkah jakarta  di akhir pekan ...</td>
+      <td>Jakarta  Pernah membayangkan bagaimana kehidup...</td>
+      <td>jakarta  pernah membayangkan bagaimana kehidup...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>5 Etiket Makan Buah Secara Formal, Ternyata Be...</td>
-      <td>Minggu, 08 Sep 2024 10:00 WIB</td>
-      <td>Jakarta - Etiket makan formal banyak dibagikan...</td>
+      <td>Aksi Bule Saat Pesan Makanan Via Ojol, Kocak h...</td>
+      <td>Rabu, 11 Sep 2024 17:30 WIB</td>
+      <td>Jakarta - Pesan makanan via aplikasi ojek onli...</td>
       <td>Makanan</td>
-      <td>Jakarta  Etiket makan formal banyak dibagikan ...</td>
-      <td>jakarta  etiket makan formal banyak dibagikan ...</td>
+      <td>Jakarta  Pesan makanan via aplikasi ojek onlin...</td>
+      <td>jakarta  pesan makanan via aplikasi ojek onlin...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Resep Ayam Ungkep Serai yang Sedap Berbumbu Re...</td>
-      <td>Minggu, 08 Sep 2024 09:00 WIB</td>
-      <td>Tentang Bahan Langkah Jakarta - Selain ayam go...</td>
+      <td>Miris! Nasi Kotak Atlet PON Aceh-Sumut Terlalu...</td>
+      <td>Rabu, 11 Sep 2024 17:00 WIB</td>
+      <td>Jakarta - Pagelaran Pekan Olahraga Nasional (P...</td>
       <td>Makanan</td>
-      <td>Tentang Bahan Langkah Jakarta  Selain ayam gor...</td>
-      <td>tentang bahan langkah jakarta  selain ayam gor...</td>
+      <td>Jakarta  Pagelaran Pekan Olahraga Nasional PON...</td>
+      <td>jakarta  pagelaran pekan olahraga nasional pon...</td>
     </tr>
   </tbody>
 </table>
 </div>
     <div class="colab-df-buttons">
-
+      
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-fe1c8b28-adc9-4894-a4a1-5d71c7d526e5')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-bbf43af9-6fc1-48fc-9cda-0718a61b62af')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
-
+      
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
   </svg>
     </button>
-
+    
   <style>
     .colab-df-container {
       display:flex;
@@ -1196,12 +908,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-fe1c8b28-adc9-4894-a4a1-5d71c7d526e5 button.colab-df-convert');
+        document.querySelector('#df-bbf43af9-6fc1-48fc-9cda-0718a61b62af button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-fe1c8b28-adc9-4894-a4a1-5d71c7d526e5');
+        const element = document.querySelector('#df-bbf43af9-6fc1-48fc-9cda-0718a61b62af');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1219,138 +931,10 @@ document.write(`
       }
     </script>
   </div>
-
-
-<div id="df-a6d5ef81-1668-425a-aa5c-e82f14950b88">
-  <button class="colab-df-quickchart" onclick="quickchart('df-a6d5ef81-1668-425a-aa5c-e82f14950b88')"
-            title="Suggest charts"
-            style="display:none;">
-
-<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-     width="24px">
-    <g>
-        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-    </g>
-</svg>
-  </button>
-
-<style>
-  .colab-df-quickchart {
-      --bg-color: #E8F0FE;
-      --fill-color: #1967D2;
-      --hover-bg-color: #E2EBFA;
-      --hover-fill-color: #174EA6;
-      --disabled-fill-color: #AAA;
-      --disabled-bg-color: #DDD;
-  }
-
-  [theme=dark] .colab-df-quickchart {
-      --bg-color: #3B4455;
-      --fill-color: #D2E3FC;
-      --hover-bg-color: #434B5C;
-      --hover-fill-color: #FFFFFF;
-      --disabled-bg-color: #3B4455;
-      --disabled-fill-color: #666;
-  }
-
-  .colab-df-quickchart {
-    background-color: var(--bg-color);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    fill: var(--fill-color);
-    height: 32px;
-    padding: 0;
-    width: 32px;
-  }
-
-  .colab-df-quickchart:hover {
-    background-color: var(--hover-bg-color);
-    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
-    fill: var(--button-hover-fill-color);
-  }
-
-  .colab-df-quickchart-complete:disabled,
-  .colab-df-quickchart-complete:disabled:hover {
-    background-color: var(--disabled-bg-color);
-    fill: var(--disabled-fill-color);
-    box-shadow: none;
-  }
-
-  .colab-df-spinner {
-    border: 2px solid var(--fill-color);
-    border-color: transparent;
-    border-bottom-color: var(--fill-color);
-    animation:
-      spin 1s steps(1) infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-      border-left-color: var(--fill-color);
-    }
-    20% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    30% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-      border-right-color: var(--fill-color);
-    }
-    40% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    60% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-    }
-    80% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-bottom-color: var(--fill-color);
-    }
-    90% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-    }
-  }
-</style>
-
-  <script>
-    async function quickchart(key) {
-      const quickchartButtonEl =
-        document.querySelector('#' + key + ' button');
-      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
-      quickchartButtonEl.classList.add('colab-df-spinner');
-      try {
-        const charts = await google.colab.kernel.invokeFunction(
-            'suggestCharts', [key], {});
-      } catch (error) {
-        console.error('Error during call to suggestCharts:', error);
-      }
-      quickchartButtonEl.classList.remove('colab-df-spinner');
-      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
-    }
-    (() => {
-      let quickchartButtonEl =
-        document.querySelector('#df-a6d5ef81-1668-425a-aa5c-e82f14950b88 button');
-      quickchartButtonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-    })();
-  </script>
-</div>
-
+  
     </div>
   </div>
-</div></div>
+  </div></div>
 </div>
 <ol class="arabic simple" start="3">
 <li><p>TOKENIZATION</p></li>
@@ -1371,7 +955,7 @@ contoh, kalimat “Saya suka makan pizza” akan dipecah menjadi token [“Saya�
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-17327de8-00f8-42eb-b1a7-6b9e2e743d4b" class="colab-df-container">
+  <div id="df-34fe04a0-d139-449c-ae28-920039302418" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1402,69 +986,69 @@ contoh, kalimat “Saya suka makan pizza” akan dipecah menjadi token [“Saya�
   <tbody>
     <tr>
       <th>0</th>
-      <td>Warung Tenda Jepang Ini Punya Chicken Katsu Cu...</td>
-      <td>Minggu, 08 Sep 2024 12:00 WIB</td>
-      <td>Jakarta - Warung Jepang tendaan di Fatmawati i...</td>
+      <td>Salut! Remaja Difabel Semangat Jualan Minuman ...</td>
+      <td>Rabu, 11 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Seorang remaja difabel berhasil meny...</td>
       <td>Makanan</td>
-      <td>Jakarta  Warung Jepang tendaan di Fatmawati in...</td>
-      <td>jakarta  warung jepang tendaan di fatmawati in...</td>
-      <td>[jakarta, warung, jepang, tendaan, di, fatmawa...</td>
+      <td>Jakarta  Seorang remaja difabel berhasil menye...</td>
+      <td>jakarta  seorang remaja difabel berhasil menye...</td>
+      <td>[jakarta, seorang, remaja, difabel, berhasil, ...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>10 Warmindo yang Punya Menu Mie Nyemek dan Mie...</td>
-      <td>Minggu, 08 Sep 2024 11:00 WIB</td>
-      <td>Jakarta - Warung mie instan atau warmindo kian...</td>
+      <td>Remaja Ini Dipaksa Jualan Makanan, Dagangannya...</td>
+      <td>Rabu, 11 Sep 2024 18:30 WIB</td>
+      <td>Jakarta - Awalnya remaja ini dipaksa untuk jua...</td>
       <td>Makanan</td>
-      <td>Jakarta  Warung mie instan atau warmindo kian ...</td>
-      <td>jakarta  warung mie instan atau warmindo kian ...</td>
-      <td>[jakarta, warung, mie, instan, atau, warmindo,...</td>
+      <td>Jakarta  Awalnya remaja ini dipaksa untuk jual...</td>
+      <td>jakarta  awalnya remaja ini dipaksa untuk jual...</td>
+      <td>[jakarta, awalnya, remaja, ini, dipaksa, untuk...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3 Resep Gorengan Populer yang Renyah Untuk Cam...</td>
-      <td>Minggu, 08 Sep 2024 10:30 WIB</td>
-      <td>Tentang Bahan Langkah Jakarta - Di akhir pekan...</td>
+      <td>Makanan di Luar Angkasa Disebut Hambar Rasanya...</td>
+      <td>Rabu, 11 Sep 2024 18:00 WIB</td>
+      <td>Jakarta - Pernah membayangkan bagaimana kehidu...</td>
       <td>Makanan</td>
-      <td>Tentang Bahan Langkah Jakarta  Di akhir pekan ...</td>
-      <td>tentang bahan langkah jakarta  di akhir pekan ...</td>
-      <td>[tentang, bahan, langkah, jakarta, di, akhir, ...</td>
+      <td>Jakarta  Pernah membayangkan bagaimana kehidup...</td>
+      <td>jakarta  pernah membayangkan bagaimana kehidup...</td>
+      <td>[jakarta, pernah, membayangkan, bagaimana, keh...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>5 Etiket Makan Buah Secara Formal, Ternyata Be...</td>
-      <td>Minggu, 08 Sep 2024 10:00 WIB</td>
-      <td>Jakarta - Etiket makan formal banyak dibagikan...</td>
+      <td>Aksi Bule Saat Pesan Makanan Via Ojol, Kocak h...</td>
+      <td>Rabu, 11 Sep 2024 17:30 WIB</td>
+      <td>Jakarta - Pesan makanan via aplikasi ojek onli...</td>
       <td>Makanan</td>
-      <td>Jakarta  Etiket makan formal banyak dibagikan ...</td>
-      <td>jakarta  etiket makan formal banyak dibagikan ...</td>
-      <td>[jakarta, etiket, makan, formal, banyak, dibag...</td>
+      <td>Jakarta  Pesan makanan via aplikasi ojek onlin...</td>
+      <td>jakarta  pesan makanan via aplikasi ojek onlin...</td>
+      <td>[jakarta, pesan, makanan, via, aplikasi, ojek,...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Resep Ayam Ungkep Serai yang Sedap Berbumbu Re...</td>
-      <td>Minggu, 08 Sep 2024 09:00 WIB</td>
-      <td>Tentang Bahan Langkah Jakarta - Selain ayam go...</td>
+      <td>Miris! Nasi Kotak Atlet PON Aceh-Sumut Terlalu...</td>
+      <td>Rabu, 11 Sep 2024 17:00 WIB</td>
+      <td>Jakarta - Pagelaran Pekan Olahraga Nasional (P...</td>
       <td>Makanan</td>
-      <td>Tentang Bahan Langkah Jakarta  Selain ayam gor...</td>
-      <td>tentang bahan langkah jakarta  selain ayam gor...</td>
-      <td>[tentang, bahan, langkah, jakarta, selain, aya...</td>
+      <td>Jakarta  Pagelaran Pekan Olahraga Nasional PON...</td>
+      <td>jakarta  pagelaran pekan olahraga nasional pon...</td>
+      <td>[jakarta, pagelaran, pekan, olahraga, nasional...</td>
     </tr>
   </tbody>
 </table>
 </div>
     <div class="colab-df-buttons">
-
+      
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-17327de8-00f8-42eb-b1a7-6b9e2e743d4b')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-34fe04a0-d139-449c-ae28-920039302418')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
-
+      
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
   </svg>
     </button>
-
+    
   <style>
     .colab-df-container {
       display:flex;
@@ -1508,12 +1092,12 @@ contoh, kalimat “Saya suka makan pizza” akan dipecah menjadi token [“Saya�
 
     <script>
       const buttonEl =
-        document.querySelector('#df-17327de8-00f8-42eb-b1a7-6b9e2e743d4b button.colab-df-convert');
+        document.querySelector('#df-34fe04a0-d139-449c-ae28-920039302418 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-17327de8-00f8-42eb-b1a7-6b9e2e743d4b');
+        const element = document.querySelector('#df-34fe04a0-d139-449c-ae28-920039302418');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1531,138 +1115,10 @@ contoh, kalimat “Saya suka makan pizza” akan dipecah menjadi token [“Saya�
       }
     </script>
   </div>
-
-
-<div id="df-15bf8934-4a19-4c44-b41c-2eb2125ab42d">
-  <button class="colab-df-quickchart" onclick="quickchart('df-15bf8934-4a19-4c44-b41c-2eb2125ab42d')"
-            title="Suggest charts"
-            style="display:none;">
-
-<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-     width="24px">
-    <g>
-        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-    </g>
-</svg>
-  </button>
-
-<style>
-  .colab-df-quickchart {
-      --bg-color: #E8F0FE;
-      --fill-color: #1967D2;
-      --hover-bg-color: #E2EBFA;
-      --hover-fill-color: #174EA6;
-      --disabled-fill-color: #AAA;
-      --disabled-bg-color: #DDD;
-  }
-
-  [theme=dark] .colab-df-quickchart {
-      --bg-color: #3B4455;
-      --fill-color: #D2E3FC;
-      --hover-bg-color: #434B5C;
-      --hover-fill-color: #FFFFFF;
-      --disabled-bg-color: #3B4455;
-      --disabled-fill-color: #666;
-  }
-
-  .colab-df-quickchart {
-    background-color: var(--bg-color);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    fill: var(--fill-color);
-    height: 32px;
-    padding: 0;
-    width: 32px;
-  }
-
-  .colab-df-quickchart:hover {
-    background-color: var(--hover-bg-color);
-    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
-    fill: var(--button-hover-fill-color);
-  }
-
-  .colab-df-quickchart-complete:disabled,
-  .colab-df-quickchart-complete:disabled:hover {
-    background-color: var(--disabled-bg-color);
-    fill: var(--disabled-fill-color);
-    box-shadow: none;
-  }
-
-  .colab-df-spinner {
-    border: 2px solid var(--fill-color);
-    border-color: transparent;
-    border-bottom-color: var(--fill-color);
-    animation:
-      spin 1s steps(1) infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-      border-left-color: var(--fill-color);
-    }
-    20% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    30% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-      border-right-color: var(--fill-color);
-    }
-    40% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    60% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-    }
-    80% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-bottom-color: var(--fill-color);
-    }
-    90% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-    }
-  }
-</style>
-
-  <script>
-    async function quickchart(key) {
-      const quickchartButtonEl =
-        document.querySelector('#' + key + ' button');
-      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
-      quickchartButtonEl.classList.add('colab-df-spinner');
-      try {
-        const charts = await google.colab.kernel.invokeFunction(
-            'suggestCharts', [key], {});
-      } catch (error) {
-        console.error('Error during call to suggestCharts:', error);
-      }
-      quickchartButtonEl.classList.remove('colab-df-spinner');
-      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
-    }
-    (() => {
-      let quickchartButtonEl =
-        document.querySelector('#df-15bf8934-4a19-4c44-b41c-2eb2125ab42d button');
-      quickchartButtonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-    })();
-  </script>
-</div>
-
+  
     </div>
   </div>
-</div></div>
+  </div></div>
 </div>
 <ol class="arabic simple" start="4">
 <li><p>STOPWORD REMOVAL</p></li>
@@ -1679,7 +1135,7 @@ contoh, kalimat “Saya pergi ke pasar dan membeli buah” akan diubah menjadi �
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package stopwords to /root/nltk_data...
-[nltk_data]   Unzipping corpora/stopwords.zip.
+[nltk_data]   Package stopwords is already up-to-date!
 </pre></div>
 </div>
 </div>
@@ -1697,7 +1153,7 @@ contoh, kalimat “Saya pergi ke pasar dan membeli buah” akan diubah menjadi �
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-dfc0ec69-62ab-40cb-968f-3fc68a0f9477" class="colab-df-container">
+  <div id="df-f12e100d-a989-4dd9-9b22-8737f642f946" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1729,74 +1185,74 @@ contoh, kalimat “Saya pergi ke pasar dan membeli buah” akan diubah menjadi �
   <tbody>
     <tr>
       <th>0</th>
-      <td>Warung Tenda Jepang Ini Punya Chicken Katsu Cu...</td>
-      <td>Minggu, 08 Sep 2024 12:00 WIB</td>
-      <td>Jakarta - Warung Jepang tendaan di Fatmawati i...</td>
+      <td>Salut! Remaja Difabel Semangat Jualan Minuman ...</td>
+      <td>Rabu, 11 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Seorang remaja difabel berhasil meny...</td>
       <td>Makanan</td>
-      <td>Jakarta  Warung Jepang tendaan di Fatmawati in...</td>
-      <td>jakarta  warung jepang tendaan di fatmawati in...</td>
-      <td>[jakarta, warung, jepang, tendaan, di, fatmawa...</td>
-      <td>jakarta warung jepang tendaan fatmawati tujuan...</td>
+      <td>Jakarta  Seorang remaja difabel berhasil menye...</td>
+      <td>jakarta  seorang remaja difabel berhasil menye...</td>
+      <td>[jakarta, seorang, remaja, difabel, berhasil, ...</td>
+      <td>jakarta remaja difabel berhasil menyentuh hati...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>10 Warmindo yang Punya Menu Mie Nyemek dan Mie...</td>
-      <td>Minggu, 08 Sep 2024 11:00 WIB</td>
-      <td>Jakarta - Warung mie instan atau warmindo kian...</td>
+      <td>Remaja Ini Dipaksa Jualan Makanan, Dagangannya...</td>
+      <td>Rabu, 11 Sep 2024 18:30 WIB</td>
+      <td>Jakarta - Awalnya remaja ini dipaksa untuk jua...</td>
       <td>Makanan</td>
-      <td>Jakarta  Warung mie instan atau warmindo kian ...</td>
-      <td>jakarta  warung mie instan atau warmindo kian ...</td>
-      <td>[jakarta, warung, mie, instan, atau, warmindo,...</td>
-      <td>jakarta warung mie instan warmindo kian popule...</td>
+      <td>Jakarta  Awalnya remaja ini dipaksa untuk jual...</td>
+      <td>jakarta  awalnya remaja ini dipaksa untuk jual...</td>
+      <td>[jakarta, awalnya, remaja, ini, dipaksa, untuk...</td>
+      <td>jakarta remaja dipaksa jualan makanan sang dag...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3 Resep Gorengan Populer yang Renyah Untuk Cam...</td>
-      <td>Minggu, 08 Sep 2024 10:30 WIB</td>
-      <td>Tentang Bahan Langkah Jakarta - Di akhir pekan...</td>
+      <td>Makanan di Luar Angkasa Disebut Hambar Rasanya...</td>
+      <td>Rabu, 11 Sep 2024 18:00 WIB</td>
+      <td>Jakarta - Pernah membayangkan bagaimana kehidu...</td>
       <td>Makanan</td>
-      <td>Tentang Bahan Langkah Jakarta  Di akhir pekan ...</td>
-      <td>tentang bahan langkah jakarta  di akhir pekan ...</td>
-      <td>[tentang, bahan, langkah, jakarta, di, akhir, ...</td>
-      <td>bahan langkah jakarta pekan gorengan gurih mur...</td>
+      <td>Jakarta  Pernah membayangkan bagaimana kehidup...</td>
+      <td>jakarta  pernah membayangkan bagaimana kehidup...</td>
+      <td>[jakarta, pernah, membayangkan, bagaimana, keh...</td>
+      <td>jakarta membayangkan kehidupan astronot angkas...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>5 Etiket Makan Buah Secara Formal, Ternyata Be...</td>
-      <td>Minggu, 08 Sep 2024 10:00 WIB</td>
-      <td>Jakarta - Etiket makan formal banyak dibagikan...</td>
+      <td>Aksi Bule Saat Pesan Makanan Via Ojol, Kocak h...</td>
+      <td>Rabu, 11 Sep 2024 17:30 WIB</td>
+      <td>Jakarta - Pesan makanan via aplikasi ojek onli...</td>
       <td>Makanan</td>
-      <td>Jakarta  Etiket makan formal banyak dibagikan ...</td>
-      <td>jakarta  etiket makan formal banyak dibagikan ...</td>
-      <td>[jakarta, etiket, makan, formal, banyak, dibag...</td>
-      <td>jakarta etiket makan formal dibagikan pakar ta...</td>
+      <td>Jakarta  Pesan makanan via aplikasi ojek onlin...</td>
+      <td>jakarta  pesan makanan via aplikasi ojek onlin...</td>
+      <td>[jakarta, pesan, makanan, via, aplikasi, ojek,...</td>
+      <td>jakarta pesan makanan via aplikasi ojek online...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Resep Ayam Ungkep Serai yang Sedap Berbumbu Re...</td>
-      <td>Minggu, 08 Sep 2024 09:00 WIB</td>
-      <td>Tentang Bahan Langkah Jakarta - Selain ayam go...</td>
+      <td>Miris! Nasi Kotak Atlet PON Aceh-Sumut Terlalu...</td>
+      <td>Rabu, 11 Sep 2024 17:00 WIB</td>
+      <td>Jakarta - Pagelaran Pekan Olahraga Nasional (P...</td>
       <td>Makanan</td>
-      <td>Tentang Bahan Langkah Jakarta  Selain ayam gor...</td>
-      <td>tentang bahan langkah jakarta  selain ayam gor...</td>
-      <td>[tentang, bahan, langkah, jakarta, selain, aya...</td>
-      <td>bahan langkah jakarta ayam goreng ayam ungkep ...</td>
+      <td>Jakarta  Pagelaran Pekan Olahraga Nasional PON...</td>
+      <td>jakarta  pagelaran pekan olahraga nasional pon...</td>
+      <td>[jakarta, pagelaran, pekan, olahraga, nasional...</td>
+      <td>jakarta pagelaran pekan olahraga nasional pon ...</td>
     </tr>
   </tbody>
 </table>
 </div>
     <div class="colab-df-buttons">
-
+      
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-dfc0ec69-62ab-40cb-968f-3fc68a0f9477')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f12e100d-a989-4dd9-9b22-8737f642f946')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
-
+      
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
   </svg>
     </button>
-
+    
   <style>
     .colab-df-container {
       display:flex;
@@ -1840,12 +1296,12 @@ contoh, kalimat “Saya pergi ke pasar dan membeli buah” akan diubah menjadi �
 
     <script>
       const buttonEl =
-        document.querySelector('#df-dfc0ec69-62ab-40cb-968f-3fc68a0f9477 button.colab-df-convert');
+        document.querySelector('#df-f12e100d-a989-4dd9-9b22-8737f642f946 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-dfc0ec69-62ab-40cb-968f-3fc68a0f9477');
+        const element = document.querySelector('#df-f12e100d-a989-4dd9-9b22-8737f642f946');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1863,138 +1319,10 @@ contoh, kalimat “Saya pergi ke pasar dan membeli buah” akan diubah menjadi �
       }
     </script>
   </div>
-
-
-<div id="df-09e5deaa-5fe4-4f9b-a92e-0449f2e72c7f">
-  <button class="colab-df-quickchart" onclick="quickchart('df-09e5deaa-5fe4-4f9b-a92e-0449f2e72c7f')"
-            title="Suggest charts"
-            style="display:none;">
-
-<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-     width="24px">
-    <g>
-        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-    </g>
-</svg>
-  </button>
-
-<style>
-  .colab-df-quickchart {
-      --bg-color: #E8F0FE;
-      --fill-color: #1967D2;
-      --hover-bg-color: #E2EBFA;
-      --hover-fill-color: #174EA6;
-      --disabled-fill-color: #AAA;
-      --disabled-bg-color: #DDD;
-  }
-
-  [theme=dark] .colab-df-quickchart {
-      --bg-color: #3B4455;
-      --fill-color: #D2E3FC;
-      --hover-bg-color: #434B5C;
-      --hover-fill-color: #FFFFFF;
-      --disabled-bg-color: #3B4455;
-      --disabled-fill-color: #666;
-  }
-
-  .colab-df-quickchart {
-    background-color: var(--bg-color);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    fill: var(--fill-color);
-    height: 32px;
-    padding: 0;
-    width: 32px;
-  }
-
-  .colab-df-quickchart:hover {
-    background-color: var(--hover-bg-color);
-    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
-    fill: var(--button-hover-fill-color);
-  }
-
-  .colab-df-quickchart-complete:disabled,
-  .colab-df-quickchart-complete:disabled:hover {
-    background-color: var(--disabled-bg-color);
-    fill: var(--disabled-fill-color);
-    box-shadow: none;
-  }
-
-  .colab-df-spinner {
-    border: 2px solid var(--fill-color);
-    border-color: transparent;
-    border-bottom-color: var(--fill-color);
-    animation:
-      spin 1s steps(1) infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-      border-left-color: var(--fill-color);
-    }
-    20% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    30% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-      border-right-color: var(--fill-color);
-    }
-    40% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    60% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-    }
-    80% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-bottom-color: var(--fill-color);
-    }
-    90% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-    }
-  }
-</style>
-
-  <script>
-    async function quickchart(key) {
-      const quickchartButtonEl =
-        document.querySelector('#' + key + ' button');
-      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
-      quickchartButtonEl.classList.add('colab-df-spinner');
-      try {
-        const charts = await google.colab.kernel.invokeFunction(
-            'suggestCharts', [key], {});
-      } catch (error) {
-        console.error('Error during call to suggestCharts:', error);
-      }
-      quickchartButtonEl.classList.remove('colab-df-spinner');
-      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
-    }
-    (() => {
-      let quickchartButtonEl =
-        document.querySelector('#df-09e5deaa-5fe4-4f9b-a92e-0449f2e72c7f button');
-      quickchartButtonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-    })();
-  </script>
-</div>
-
+  
     </div>
   </div>
-</div></div>
+  </div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2039,7 +1367,7 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-1715371e-9e15-41f3-8481-33c222fb455e" class="colab-df-container">
+  <div id="df-cb0e3da5-6546-4b2b-b786-235a7a5e728b" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2060,25 +1388,25 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <th></th>
       <th>aa</th>
       <th>abad</th>
+      <th>abadi</th>
       <th>abang</th>
       <th>abc</th>
-      <th>abnormal</th>
+      <th>abdi</th>
+      <th>abon</th>
+      <th>absennya</th>
       <th>abuabu</th>
-      <th>acak</th>
-      <th>acar</th>
-      <th>acara</th>
-      <th>acaraki</th>
+      <th>aburaage</th>
       <th>...</th>
-      <th>yuwono</th>
-      <th>zaeni</th>
+      <th>yuk</th>
+      <th>yunani</th>
+      <th>yunidar</th>
+      <th>yuval</th>
+      <th>zahrahateerah</th>
       <th>zaitun</th>
       <th>zaman</th>
-      <th>zat</th>
-      <th>zef</th>
-      <th>zermatt</th>
-      <th>zita</th>
+      <th>zealand</th>
       <th>zona</th>
-      <th>zonanya</th>
+      <th>zonk</th>
     </tr>
   </thead>
   <tbody>
@@ -2086,9 +1414,9 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <th>0</th>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -2096,13 +1424,13 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
@@ -2110,9 +1438,9 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <th>1</th>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.061649</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -2120,13 +1448,13 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
@@ -2134,9 +1462,9 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <th>2</th>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -2144,13 +1472,13 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.030405</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
@@ -2158,9 +1486,9 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <th>3</th>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -2168,13 +1496,13 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
@@ -2182,9 +1510,9 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <th>4</th>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -2192,13 +1520,13 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
@@ -2206,9 +1534,9 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <th>5</th>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -2216,13 +1544,13 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
@@ -2230,9 +1558,9 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <th>6</th>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -2240,13 +1568,13 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
-      <td>0.028519</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.092841</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
@@ -2254,9 +1582,9 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <th>7</th>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -2264,13 +1592,13 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
@@ -2278,9 +1606,9 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <th>8</th>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
-      <td>0.042778</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -2288,13 +1616,13 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.034814</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
@@ -2302,9 +1630,9 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <th>9</th>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -2312,32 +1640,32 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
   </tbody>
 </table>
-<p>10 rows × 4992 columns</p>
+<p>10 rows × 5449 columns</p>
 </div>
     <div class="colab-df-buttons">
-
+      
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-1715371e-9e15-41f3-8481-33c222fb455e')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-cb0e3da5-6546-4b2b-b786-235a7a5e728b')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
-
+      
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
   </svg>
     </button>
-
+    
   <style>
     .colab-df-container {
       display:flex;
@@ -2381,12 +1709,12 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
 
     <script>
       const buttonEl =
-        document.querySelector('#df-1715371e-9e15-41f3-8481-33c222fb455e button.colab-df-convert');
+        document.querySelector('#df-cb0e3da5-6546-4b2b-b786-235a7a5e728b button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-1715371e-9e15-41f3-8481-33c222fb455e');
+        const element = document.querySelector('#df-cb0e3da5-6546-4b2b-b786-235a7a5e728b');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2404,138 +1732,10 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       }
     </script>
   </div>
-
-
-<div id="df-e6a0c5b7-0869-4f96-ae05-d99c580f5562">
-  <button class="colab-df-quickchart" onclick="quickchart('df-e6a0c5b7-0869-4f96-ae05-d99c580f5562')"
-            title="Suggest charts"
-            style="display:none;">
-
-<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-     width="24px">
-    <g>
-        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-    </g>
-</svg>
-  </button>
-
-<style>
-  .colab-df-quickchart {
-      --bg-color: #E8F0FE;
-      --fill-color: #1967D2;
-      --hover-bg-color: #E2EBFA;
-      --hover-fill-color: #174EA6;
-      --disabled-fill-color: #AAA;
-      --disabled-bg-color: #DDD;
-  }
-
-  [theme=dark] .colab-df-quickchart {
-      --bg-color: #3B4455;
-      --fill-color: #D2E3FC;
-      --hover-bg-color: #434B5C;
-      --hover-fill-color: #FFFFFF;
-      --disabled-bg-color: #3B4455;
-      --disabled-fill-color: #666;
-  }
-
-  .colab-df-quickchart {
-    background-color: var(--bg-color);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    fill: var(--fill-color);
-    height: 32px;
-    padding: 0;
-    width: 32px;
-  }
-
-  .colab-df-quickchart:hover {
-    background-color: var(--hover-bg-color);
-    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
-    fill: var(--button-hover-fill-color);
-  }
-
-  .colab-df-quickchart-complete:disabled,
-  .colab-df-quickchart-complete:disabled:hover {
-    background-color: var(--disabled-bg-color);
-    fill: var(--disabled-fill-color);
-    box-shadow: none;
-  }
-
-  .colab-df-spinner {
-    border: 2px solid var(--fill-color);
-    border-color: transparent;
-    border-bottom-color: var(--fill-color);
-    animation:
-      spin 1s steps(1) infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-      border-left-color: var(--fill-color);
-    }
-    20% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    30% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-      border-right-color: var(--fill-color);
-    }
-    40% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    60% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-    }
-    80% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-bottom-color: var(--fill-color);
-    }
-    90% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-    }
-  }
-</style>
-
-  <script>
-    async function quickchart(key) {
-      const quickchartButtonEl =
-        document.querySelector('#' + key + ' button');
-      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
-      quickchartButtonEl.classList.add('colab-df-spinner');
-      try {
-        const charts = await google.colab.kernel.invokeFunction(
-            'suggestCharts', [key], {});
-      } catch (error) {
-        console.error('Error during call to suggestCharts:', error);
-      }
-      quickchartButtonEl.classList.remove('colab-df-spinner');
-      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
-    }
-    (() => {
-      let quickchartButtonEl =
-        document.querySelector('#df-e6a0c5b7-0869-4f96-ae05-d99c580f5562 button');
-      quickchartButtonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-    })();
-  </script>
-</div>
-
+  
     </div>
   </div>
-</div></div>
+  </div></div>
 </div>
 </section>
 
