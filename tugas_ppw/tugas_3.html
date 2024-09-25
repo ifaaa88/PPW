@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Penjelasan Metode Logistic Regression &#8212; Pencarian dan Penambangan Web</title>
+    <title>Tugas 3_Metode Logistic Regression &#8212; Pencarian dan Penambangan Web</title>
   
   
   
@@ -181,7 +181,8 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="tugas_1.html">Tugas 1 : Crawling Berita</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tugas_2.html"><strong>Tugas 2 Preprocessing Dan TF IDF</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Penjelasan Metode Logistic Regression</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Tugas 3_Metode Logistic Regression</strong></a></li>
+
 </ul>
 
     </div>
@@ -385,7 +386,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -396,11 +399,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Penjelasan Metode Logistic Regression</h1>
+    <h1>Tugas 3_Metode Logistic Regression</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Tugas 3_Metode Logistic Regression</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-metode-logistic-regression">Penjelasan Metode Logistic Regression</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -413,6 +426,9 @@ document.write(`
   <p>nama : Siti Ma’rifatul Khoiriyah</p>
 <p>nim : 210411100007</p>
 <p>kelas : PPW A</p>
+<section class="tex2jax_ignore mathjax_ignore" id="tugas-3-metode-logistic-regression">
+<h1><strong>Tugas 3_Metode Logistic Regression</strong><a class="headerlink" href="#tugas-3-metode-logistic-regression" title="Link to this heading">#</a></h1>
+</section>
 <section class="tex2jax_ignore mathjax_ignore" id="penjelasan-metode-logistic-regression">
 <h1>Penjelasan Metode Logistic Regression<a class="headerlink" href="#penjelasan-metode-logistic-regression" title="Link to this heading">#</a></h1>
 <p>logistik regresi statistik digunakan, terutama untuk masalah klasifikasi biner, yaitu untuk memprediksi salah satu dari dua hasil yang mungkin (misalnya, “ya” atau “tidak”, “1” atau “0”). Model ini memprediksi variabel kategoris, bukan variabel kontinu seperti regresi linear, meskipun namanya mengandung kata “regresi”.
@@ -456,7 +472,7 @@ Ini berguna untuk memeriksa data secara sekilas dan memastikan bahwa data dari f
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-effda9a8-f458-4899-ad3e-e5b6bdbe7458" class="colab-df-container">
+  <div id="df-b9214dde-aedb-4f69-a4af-caa424d2e8f2" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -547,7 +563,7 @@ Ini berguna untuk memeriksa data secara sekilas dan memastikan bahwa data dari f
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-effda9a8-f458-4899-ad3e-e5b6bdbe7458')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-b9214dde-aedb-4f69-a4af-caa424d2e8f2')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -599,12 +615,12 @@ Ini berguna untuk memeriksa data secara sekilas dan memastikan bahwa data dari f
 
     <script>
       const buttonEl =
-        document.querySelector('#df-effda9a8-f458-4899-ad3e-e5b6bdbe7458 button.colab-df-convert');
+        document.querySelector('#df-b9214dde-aedb-4f69-a4af-caa424d2e8f2 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-effda9a8-f458-4899-ad3e-e5b6bdbe7458');
+        const element = document.querySelector('#df-b9214dde-aedb-4f69-a4af-caa424d2e8f2');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -673,7 +689,7 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f623c793-8aad-4293-af2e-d40d798e0d33" class="colab-df-container">
+  <div id="df-deda644a-179d-4057-b307-a7e3924b6732" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -963,7 +979,7 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-f623c793-8aad-4293-af2e-d40d798e0d33')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-deda644a-179d-4057-b307-a7e3924b6732')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1015,12 +1031,12 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
 
     <script>
       const buttonEl =
-        document.querySelector('#df-f623c793-8aad-4293-af2e-d40d798e0d33 button.colab-df-convert');
+        document.querySelector('#df-deda644a-179d-4057-b307-a7e3924b6732 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-f623c793-8aad-4293-af2e-d40d798e0d33');
+        const element = document.querySelector('#df-deda644a-179d-4057-b307-a7e3924b6732');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1576,6 +1592,23 @@ Confusion Matrix:
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Tugas 3_Metode Logistic Regression</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-metode-logistic-regression">Penjelasan Metode Logistic Regression</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
