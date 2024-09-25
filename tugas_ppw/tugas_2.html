@@ -60,6 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'tugas_ppw/tugas_2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Penjelasan Metode Logistic Regression" href="tugas_3.html" />
     <link rel="prev" title="Tugas 1 : Crawling Berita" href="tugas_1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -181,6 +182,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="tugas_1.html">Tugas 1 : Crawling Berita</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Tugas 2 Preprocessing Dan TF IDF</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="tugas_3.html">Penjelasan Metode Logistic Regression</a></li>
 </ul>
 
     </div>
@@ -441,7 +443,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a9f5c46d-11c3-40bb-a7b8-e9242b856a30" class="colab-df-container">
+  <div id="df-772ea5c6-17ec-4339-b892-5f2148383e2a" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -469,37 +471,37 @@ document.write(`
   <tbody>
     <tr>
       <th>0</th>
-      <td>Influencer Makan di Resto Michelin Habiskan Rp...</td>
-      <td>Rabu, 11 Sep 2024 19:30 WIB</td>
-      <td>Jakarta - Habiskan uang Rp 15,4 juta, influenc...</td>
+      <td>Potret Cantik Enzy Storia Saat Kulineran di Pa...</td>
+      <td>Rabu, 25 Sep 2024 22:00 WIB</td>
+      <td>Jakarta - Enzy Storia banjir pujian setelah ta...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Salut! Remaja Difabel Semangat Jualan Minuman ...</td>
-      <td>Rabu, 11 Sep 2024 19:00 WIB</td>
-      <td>Jakarta - Seorang remaja difabel berhasil meny...</td>
+      <td>Potret Mesra Sahrul Gunawan Saat Kulineran Bar...</td>
+      <td>Rabu, 25 Sep 2024 21:00 WIB</td>
+      <td>Jakarta - Sahrul Gunawan dan istri gagal punya...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Remaja Ini Dipaksa Jualan Makanan, Dagangannya...</td>
-      <td>Rabu, 11 Sep 2024 18:30 WIB</td>
-      <td>Jakarta - Awalnya remaja ini dipaksa untuk jua...</td>
+      <td>Ditegur Staf Restoran Gegara Bawa Makanan dari...</td>
+      <td>Rabu, 25 Sep 2024 19:30 WIB</td>
+      <td>Jakarta - Seorang pengunjung restoran jadi sak...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Makanan di Luar Angkasa Disebut Hambar Rasanya...</td>
-      <td>Rabu, 11 Sep 2024 18:00 WIB</td>
-      <td>Jakarta - Pernah membayangkan bagaimana kehidu...</td>
+      <td>Unik! Burger Ini Isinya Kepiting Utuh Berukura...</td>
+      <td>Rabu, 25 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Biasanya burger berisi patty atau da...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Aksi Bule Saat Pesan Makanan Via Ojol, Kocak h...</td>
-      <td>Rabu, 11 Sep 2024 17:30 WIB</td>
-      <td>Jakarta - Pesan makanan via aplikasi ojek onli...</td>
+      <td>Qobe Mie: Sensasi Mie Pedas Baru di Bogor, Lar...</td>
+      <td>Rabu, 25 Sep 2024 18:41 WIB</td>
+      <td>Jakarta - Ingin coba menikmati sensasi lezat m...</td>
       <td>Makanan</td>
     </tr>
   </tbody>
@@ -508,7 +510,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-a9f5c46d-11c3-40bb-a7b8-e9242b856a30')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-772ea5c6-17ec-4339-b892-5f2148383e2a')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -560,12 +562,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-a9f5c46d-11c3-40bb-a7b8-e9242b856a30 button.colab-df-convert');
+        document.querySelector('#df-772ea5c6-17ec-4339-b892-5f2148383e2a button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-a9f5c46d-11c3-40bb-a7b8-e9242b856a30');
+        const element = document.querySelector('#df-772ea5c6-17ec-4339-b892-5f2148383e2a');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -634,7 +636,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e079ed91-ec10-4a76-8740-32424c19edf2" class="colab-df-container">
+  <div id="df-333f9f5d-89ef-4262-bc0c-59caafc57936" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -663,43 +665,43 @@ document.write(`
   <tbody>
     <tr>
       <th>0</th>
-      <td>Influencer Makan di Resto Michelin Habiskan Rp...</td>
-      <td>Rabu, 11 Sep 2024 19:30 WIB</td>
-      <td>Jakarta - Habiskan uang Rp 15,4 juta, influenc...</td>
+      <td>Potret Cantik Enzy Storia Saat Kulineran di Pa...</td>
+      <td>Rabu, 25 Sep 2024 22:00 WIB</td>
+      <td>Jakarta - Enzy Storia banjir pujian setelah ta...</td>
       <td>Makanan</td>
-      <td>Jakarta  Habiskan uang Rp  juta influencer ini...</td>
+      <td>Jakarta  Enzy Storia banjir pujian setelah tam...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Salut! Remaja Difabel Semangat Jualan Minuman ...</td>
-      <td>Rabu, 11 Sep 2024 19:00 WIB</td>
-      <td>Jakarta - Seorang remaja difabel berhasil meny...</td>
+      <td>Potret Mesra Sahrul Gunawan Saat Kulineran Bar...</td>
+      <td>Rabu, 25 Sep 2024 21:00 WIB</td>
+      <td>Jakarta - Sahrul Gunawan dan istri gagal punya...</td>
       <td>Makanan</td>
-      <td>Jakarta  Seorang remaja difabel berhasil menye...</td>
+      <td>Jakarta  Sahrul Gunawan dan istri gagal punya ...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Remaja Ini Dipaksa Jualan Makanan, Dagangannya...</td>
-      <td>Rabu, 11 Sep 2024 18:30 WIB</td>
-      <td>Jakarta - Awalnya remaja ini dipaksa untuk jua...</td>
+      <td>Ditegur Staf Restoran Gegara Bawa Makanan dari...</td>
+      <td>Rabu, 25 Sep 2024 19:30 WIB</td>
+      <td>Jakarta - Seorang pengunjung restoran jadi sak...</td>
       <td>Makanan</td>
-      <td>Jakarta  Awalnya remaja ini dipaksa untuk jual...</td>
+      <td>Jakarta  Seorang pengunjung restoran jadi saks...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Makanan di Luar Angkasa Disebut Hambar Rasanya...</td>
-      <td>Rabu, 11 Sep 2024 18:00 WIB</td>
-      <td>Jakarta - Pernah membayangkan bagaimana kehidu...</td>
+      <td>Unik! Burger Ini Isinya Kepiting Utuh Berukura...</td>
+      <td>Rabu, 25 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Biasanya burger berisi patty atau da...</td>
       <td>Makanan</td>
-      <td>Jakarta  Pernah membayangkan bagaimana kehidup...</td>
+      <td>Jakarta  Biasanya burger berisi patty atau dag...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Aksi Bule Saat Pesan Makanan Via Ojol, Kocak h...</td>
-      <td>Rabu, 11 Sep 2024 17:30 WIB</td>
-      <td>Jakarta - Pesan makanan via aplikasi ojek onli...</td>
+      <td>Qobe Mie: Sensasi Mie Pedas Baru di Bogor, Lar...</td>
+      <td>Rabu, 25 Sep 2024 18:41 WIB</td>
+      <td>Jakarta - Ingin coba menikmati sensasi lezat m...</td>
       <td>Makanan</td>
-      <td>Jakarta  Pesan makanan via aplikasi ojek onlin...</td>
+      <td>Jakarta  Ingin coba menikmati sensasi lezat mi...</td>
     </tr>
   </tbody>
 </table>
@@ -707,7 +709,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-e079ed91-ec10-4a76-8740-32424c19edf2')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-333f9f5d-89ef-4262-bc0c-59caafc57936')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -759,12 +761,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-e079ed91-ec10-4a76-8740-32424c19edf2 button.colab-df-convert');
+        document.querySelector('#df-333f9f5d-89ef-4262-bc0c-59caafc57936 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-e079ed91-ec10-4a76-8740-32424c19edf2');
+        const element = document.querySelector('#df-333f9f5d-89ef-4262-bc0c-59caafc57936');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -808,7 +810,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0af08101-9eb7-4212-a11a-30862689fbe3" class="colab-df-container">
+  <div id="df-bbe974d1-3755-4839-950a-02020baf0755" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -838,48 +840,48 @@ document.write(`
   <tbody>
     <tr>
       <th>0</th>
-      <td>Influencer Makan di Resto Michelin Habiskan Rp...</td>
-      <td>Rabu, 11 Sep 2024 19:30 WIB</td>
-      <td>Jakarta - Habiskan uang Rp 15,4 juta, influenc...</td>
+      <td>Potret Cantik Enzy Storia Saat Kulineran di Pa...</td>
+      <td>Rabu, 25 Sep 2024 22:00 WIB</td>
+      <td>Jakarta - Enzy Storia banjir pujian setelah ta...</td>
       <td>Makanan</td>
-      <td>Jakarta  Habiskan uang Rp  juta influencer ini...</td>
-      <td>jakarta  habiskan uang rp  juta influencer ini...</td>
+      <td>Jakarta  Enzy Storia banjir pujian setelah tam...</td>
+      <td>jakarta  enzy storia banjir pujian setelah tam...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Salut! Remaja Difabel Semangat Jualan Minuman ...</td>
-      <td>Rabu, 11 Sep 2024 19:00 WIB</td>
-      <td>Jakarta - Seorang remaja difabel berhasil meny...</td>
+      <td>Potret Mesra Sahrul Gunawan Saat Kulineran Bar...</td>
+      <td>Rabu, 25 Sep 2024 21:00 WIB</td>
+      <td>Jakarta - Sahrul Gunawan dan istri gagal punya...</td>
       <td>Makanan</td>
-      <td>Jakarta  Seorang remaja difabel berhasil menye...</td>
-      <td>jakarta  seorang remaja difabel berhasil menye...</td>
+      <td>Jakarta  Sahrul Gunawan dan istri gagal punya ...</td>
+      <td>jakarta  sahrul gunawan dan istri gagal punya ...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Remaja Ini Dipaksa Jualan Makanan, Dagangannya...</td>
-      <td>Rabu, 11 Sep 2024 18:30 WIB</td>
-      <td>Jakarta - Awalnya remaja ini dipaksa untuk jua...</td>
+      <td>Ditegur Staf Restoran Gegara Bawa Makanan dari...</td>
+      <td>Rabu, 25 Sep 2024 19:30 WIB</td>
+      <td>Jakarta - Seorang pengunjung restoran jadi sak...</td>
       <td>Makanan</td>
-      <td>Jakarta  Awalnya remaja ini dipaksa untuk jual...</td>
-      <td>jakarta  awalnya remaja ini dipaksa untuk jual...</td>
+      <td>Jakarta  Seorang pengunjung restoran jadi saks...</td>
+      <td>jakarta  seorang pengunjung restoran jadi saks...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Makanan di Luar Angkasa Disebut Hambar Rasanya...</td>
-      <td>Rabu, 11 Sep 2024 18:00 WIB</td>
-      <td>Jakarta - Pernah membayangkan bagaimana kehidu...</td>
+      <td>Unik! Burger Ini Isinya Kepiting Utuh Berukura...</td>
+      <td>Rabu, 25 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Biasanya burger berisi patty atau da...</td>
       <td>Makanan</td>
-      <td>Jakarta  Pernah membayangkan bagaimana kehidup...</td>
-      <td>jakarta  pernah membayangkan bagaimana kehidup...</td>
+      <td>Jakarta  Biasanya burger berisi patty atau dag...</td>
+      <td>jakarta  biasanya burger berisi patty atau dag...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Aksi Bule Saat Pesan Makanan Via Ojol, Kocak h...</td>
-      <td>Rabu, 11 Sep 2024 17:30 WIB</td>
-      <td>Jakarta - Pesan makanan via aplikasi ojek onli...</td>
+      <td>Qobe Mie: Sensasi Mie Pedas Baru di Bogor, Lar...</td>
+      <td>Rabu, 25 Sep 2024 18:41 WIB</td>
+      <td>Jakarta - Ingin coba menikmati sensasi lezat m...</td>
       <td>Makanan</td>
-      <td>Jakarta  Pesan makanan via aplikasi ojek onlin...</td>
-      <td>jakarta  pesan makanan via aplikasi ojek onlin...</td>
+      <td>Jakarta  Ingin coba menikmati sensasi lezat mi...</td>
+      <td>jakarta  ingin coba menikmati sensasi lezat mi...</td>
     </tr>
   </tbody>
 </table>
@@ -887,7 +889,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-0af08101-9eb7-4212-a11a-30862689fbe3')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-bbe974d1-3755-4839-950a-02020baf0755')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -939,12 +941,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-0af08101-9eb7-4212-a11a-30862689fbe3 button.colab-df-convert');
+        document.querySelector('#df-bbe974d1-3755-4839-950a-02020baf0755 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-0af08101-9eb7-4212-a11a-30862689fbe3');
+        const element = document.querySelector('#df-bbe974d1-3755-4839-950a-02020baf0755');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -986,7 +988,7 @@ contoh, kalimat “Saya suka makan pizza” akan dipecah menjadi token [“Saya�
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-fbea40f4-4100-4fee-8e82-4fd412ca2c55" class="colab-df-container">
+  <div id="df-67114a32-dbca-46fe-bfaa-d1b02a05cee2" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1017,53 +1019,53 @@ contoh, kalimat “Saya suka makan pizza” akan dipecah menjadi token [“Saya�
   <tbody>
     <tr>
       <th>0</th>
-      <td>Influencer Makan di Resto Michelin Habiskan Rp...</td>
-      <td>Rabu, 11 Sep 2024 19:30 WIB</td>
-      <td>Jakarta - Habiskan uang Rp 15,4 juta, influenc...</td>
+      <td>Potret Cantik Enzy Storia Saat Kulineran di Pa...</td>
+      <td>Rabu, 25 Sep 2024 22:00 WIB</td>
+      <td>Jakarta - Enzy Storia banjir pujian setelah ta...</td>
       <td>Makanan</td>
-      <td>Jakarta  Habiskan uang Rp  juta influencer ini...</td>
-      <td>jakarta  habiskan uang rp  juta influencer ini...</td>
-      <td>[jakarta, habiskan, uang, rp, juta, influencer...</td>
+      <td>Jakarta  Enzy Storia banjir pujian setelah tam...</td>
+      <td>jakarta  enzy storia banjir pujian setelah tam...</td>
+      <td>[jakarta, enzy, storia, banjir, pujian, setela...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Salut! Remaja Difabel Semangat Jualan Minuman ...</td>
-      <td>Rabu, 11 Sep 2024 19:00 WIB</td>
-      <td>Jakarta - Seorang remaja difabel berhasil meny...</td>
+      <td>Potret Mesra Sahrul Gunawan Saat Kulineran Bar...</td>
+      <td>Rabu, 25 Sep 2024 21:00 WIB</td>
+      <td>Jakarta - Sahrul Gunawan dan istri gagal punya...</td>
       <td>Makanan</td>
-      <td>Jakarta  Seorang remaja difabel berhasil menye...</td>
-      <td>jakarta  seorang remaja difabel berhasil menye...</td>
-      <td>[jakarta, seorang, remaja, difabel, berhasil, ...</td>
+      <td>Jakarta  Sahrul Gunawan dan istri gagal punya ...</td>
+      <td>jakarta  sahrul gunawan dan istri gagal punya ...</td>
+      <td>[jakarta, sahrul, gunawan, dan, istri, gagal, ...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Remaja Ini Dipaksa Jualan Makanan, Dagangannya...</td>
-      <td>Rabu, 11 Sep 2024 18:30 WIB</td>
-      <td>Jakarta - Awalnya remaja ini dipaksa untuk jua...</td>
+      <td>Ditegur Staf Restoran Gegara Bawa Makanan dari...</td>
+      <td>Rabu, 25 Sep 2024 19:30 WIB</td>
+      <td>Jakarta - Seorang pengunjung restoran jadi sak...</td>
       <td>Makanan</td>
-      <td>Jakarta  Awalnya remaja ini dipaksa untuk jual...</td>
-      <td>jakarta  awalnya remaja ini dipaksa untuk jual...</td>
-      <td>[jakarta, awalnya, remaja, ini, dipaksa, untuk...</td>
+      <td>Jakarta  Seorang pengunjung restoran jadi saks...</td>
+      <td>jakarta  seorang pengunjung restoran jadi saks...</td>
+      <td>[jakarta, seorang, pengunjung, restoran, jadi,...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Makanan di Luar Angkasa Disebut Hambar Rasanya...</td>
-      <td>Rabu, 11 Sep 2024 18:00 WIB</td>
-      <td>Jakarta - Pernah membayangkan bagaimana kehidu...</td>
+      <td>Unik! Burger Ini Isinya Kepiting Utuh Berukura...</td>
+      <td>Rabu, 25 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Biasanya burger berisi patty atau da...</td>
       <td>Makanan</td>
-      <td>Jakarta  Pernah membayangkan bagaimana kehidup...</td>
-      <td>jakarta  pernah membayangkan bagaimana kehidup...</td>
-      <td>[jakarta, pernah, membayangkan, bagaimana, keh...</td>
+      <td>Jakarta  Biasanya burger berisi patty atau dag...</td>
+      <td>jakarta  biasanya burger berisi patty atau dag...</td>
+      <td>[jakarta, biasanya, burger, berisi, patty, ata...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Aksi Bule Saat Pesan Makanan Via Ojol, Kocak h...</td>
-      <td>Rabu, 11 Sep 2024 17:30 WIB</td>
-      <td>Jakarta - Pesan makanan via aplikasi ojek onli...</td>
+      <td>Qobe Mie: Sensasi Mie Pedas Baru di Bogor, Lar...</td>
+      <td>Rabu, 25 Sep 2024 18:41 WIB</td>
+      <td>Jakarta - Ingin coba menikmati sensasi lezat m...</td>
       <td>Makanan</td>
-      <td>Jakarta  Pesan makanan via aplikasi ojek onlin...</td>
-      <td>jakarta  pesan makanan via aplikasi ojek onlin...</td>
-      <td>[jakarta, pesan, makanan, via, aplikasi, ojek,...</td>
+      <td>Jakarta  Ingin coba menikmati sensasi lezat mi...</td>
+      <td>jakarta  ingin coba menikmati sensasi lezat mi...</td>
+      <td>[jakarta, ingin, coba, menikmati, sensasi, lez...</td>
     </tr>
   </tbody>
 </table>
@@ -1071,7 +1073,7 @@ contoh, kalimat “Saya suka makan pizza” akan dipecah menjadi token [“Saya�
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-fbea40f4-4100-4fee-8e82-4fd412ca2c55')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-67114a32-dbca-46fe-bfaa-d1b02a05cee2')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1123,12 +1125,12 @@ contoh, kalimat “Saya suka makan pizza” akan dipecah menjadi token [“Saya�
 
     <script>
       const buttonEl =
-        document.querySelector('#df-fbea40f4-4100-4fee-8e82-4fd412ca2c55 button.colab-df-convert');
+        document.querySelector('#df-67114a32-dbca-46fe-bfaa-d1b02a05cee2 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-fbea40f4-4100-4fee-8e82-4fd412ca2c55');
+        const element = document.querySelector('#df-67114a32-dbca-46fe-bfaa-d1b02a05cee2');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1166,7 +1168,7 @@ contoh, kalimat “Saya pergi ke pasar dan membeli buah” akan diubah menjadi �
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package stopwords to /root/nltk_data...
-[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data]   Unzipping corpora/stopwords.zip.
 </pre></div>
 </div>
 </div>
@@ -1184,7 +1186,7 @@ contoh, kalimat “Saya pergi ke pasar dan membeli buah” akan diubah menjadi �
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-986efaab-3989-4bf3-9eed-0e5f581dbb6e" class="colab-df-container">
+  <div id="df-6c23faba-7e10-4eb6-bf66-563994de4614" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1216,58 +1218,58 @@ contoh, kalimat “Saya pergi ke pasar dan membeli buah” akan diubah menjadi �
   <tbody>
     <tr>
       <th>0</th>
-      <td>Influencer Makan di Resto Michelin Habiskan Rp...</td>
-      <td>Rabu, 11 Sep 2024 19:30 WIB</td>
-      <td>Jakarta - Habiskan uang Rp 15,4 juta, influenc...</td>
+      <td>Potret Cantik Enzy Storia Saat Kulineran di Pa...</td>
+      <td>Rabu, 25 Sep 2024 22:00 WIB</td>
+      <td>Jakarta - Enzy Storia banjir pujian setelah ta...</td>
       <td>Makanan</td>
-      <td>Jakarta  Habiskan uang Rp  juta influencer ini...</td>
-      <td>jakarta  habiskan uang rp  juta influencer ini...</td>
-      <td>[jakarta, habiskan, uang, rp, juta, influencer...</td>
-      <td>jakarta habiskan uang rp juta influencer menga...</td>
+      <td>Jakarta  Enzy Storia banjir pujian setelah tam...</td>
+      <td>jakarta  enzy storia banjir pujian setelah tam...</td>
+      <td>[jakarta, enzy, storia, banjir, pujian, setela...</td>
+      <td>jakarta enzy storia banjir pujian tampil paris...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Salut! Remaja Difabel Semangat Jualan Minuman ...</td>
-      <td>Rabu, 11 Sep 2024 19:00 WIB</td>
-      <td>Jakarta - Seorang remaja difabel berhasil meny...</td>
+      <td>Potret Mesra Sahrul Gunawan Saat Kulineran Bar...</td>
+      <td>Rabu, 25 Sep 2024 21:00 WIB</td>
+      <td>Jakarta - Sahrul Gunawan dan istri gagal punya...</td>
       <td>Makanan</td>
-      <td>Jakarta  Seorang remaja difabel berhasil menye...</td>
-      <td>jakarta  seorang remaja difabel berhasil menye...</td>
-      <td>[jakarta, seorang, remaja, difabel, berhasil, ...</td>
-      <td>jakarta remaja difabel berhasil menyentuh hati...</td>
+      <td>Jakarta  Sahrul Gunawan dan istri gagal punya ...</td>
+      <td>jakarta  sahrul gunawan dan istri gagal punya ...</td>
+      <td>[jakarta, sahrul, gunawan, dan, istri, gagal, ...</td>
+      <td>jakarta sahrul gunawan istri gagal anak mencob...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Remaja Ini Dipaksa Jualan Makanan, Dagangannya...</td>
-      <td>Rabu, 11 Sep 2024 18:30 WIB</td>
-      <td>Jakarta - Awalnya remaja ini dipaksa untuk jua...</td>
+      <td>Ditegur Staf Restoran Gegara Bawa Makanan dari...</td>
+      <td>Rabu, 25 Sep 2024 19:30 WIB</td>
+      <td>Jakarta - Seorang pengunjung restoran jadi sak...</td>
       <td>Makanan</td>
-      <td>Jakarta  Awalnya remaja ini dipaksa untuk jual...</td>
-      <td>jakarta  awalnya remaja ini dipaksa untuk jual...</td>
-      <td>[jakarta, awalnya, remaja, ini, dipaksa, untuk...</td>
-      <td>jakarta remaja dipaksa jualan makanan sang dag...</td>
+      <td>Jakarta  Seorang pengunjung restoran jadi saks...</td>
+      <td>jakarta  seorang pengunjung restoran jadi saks...</td>
+      <td>[jakarta, seorang, pengunjung, restoran, jadi,...</td>
+      <td>jakarta pengunjung restoran saksi mata keribut...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Makanan di Luar Angkasa Disebut Hambar Rasanya...</td>
-      <td>Rabu, 11 Sep 2024 18:00 WIB</td>
-      <td>Jakarta - Pernah membayangkan bagaimana kehidu...</td>
+      <td>Unik! Burger Ini Isinya Kepiting Utuh Berukura...</td>
+      <td>Rabu, 25 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Biasanya burger berisi patty atau da...</td>
       <td>Makanan</td>
-      <td>Jakarta  Pernah membayangkan bagaimana kehidup...</td>
-      <td>jakarta  pernah membayangkan bagaimana kehidup...</td>
-      <td>[jakarta, pernah, membayangkan, bagaimana, keh...</td>
-      <td>jakarta membayangkan kehidupan astronot angkas...</td>
+      <td>Jakarta  Biasanya burger berisi patty atau dag...</td>
+      <td>jakarta  biasanya burger berisi patty atau dag...</td>
+      <td>[jakarta, biasanya, burger, berisi, patty, ata...</td>
+      <td>jakarta burger berisi patty daging sapi bundar...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Aksi Bule Saat Pesan Makanan Via Ojol, Kocak h...</td>
-      <td>Rabu, 11 Sep 2024 17:30 WIB</td>
-      <td>Jakarta - Pesan makanan via aplikasi ojek onli...</td>
+      <td>Qobe Mie: Sensasi Mie Pedas Baru di Bogor, Lar...</td>
+      <td>Rabu, 25 Sep 2024 18:41 WIB</td>
+      <td>Jakarta - Ingin coba menikmati sensasi lezat m...</td>
       <td>Makanan</td>
-      <td>Jakarta  Pesan makanan via aplikasi ojek onlin...</td>
-      <td>jakarta  pesan makanan via aplikasi ojek onlin...</td>
-      <td>[jakarta, pesan, makanan, via, aplikasi, ojek,...</td>
-      <td>jakarta pesan makanan via aplikasi ojek online...</td>
+      <td>Jakarta  Ingin coba menikmati sensasi lezat mi...</td>
+      <td>jakarta  ingin coba menikmati sensasi lezat mi...</td>
+      <td>[jakarta, ingin, coba, menikmati, sensasi, lez...</td>
+      <td>jakarta coba menikmati sensasi lezat mie pedas...</td>
     </tr>
   </tbody>
 </table>
@@ -1275,7 +1277,7 @@ contoh, kalimat “Saya pergi ke pasar dan membeli buah” akan diubah menjadi �
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-986efaab-3989-4bf3-9eed-0e5f581dbb6e')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-6c23faba-7e10-4eb6-bf66-563994de4614')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1327,12 +1329,12 @@ contoh, kalimat “Saya pergi ke pasar dan membeli buah” akan diubah menjadi �
 
     <script>
       const buttonEl =
-        document.querySelector('#df-986efaab-3989-4bf3-9eed-0e5f581dbb6e button.colab-df-convert');
+        document.querySelector('#df-6c23faba-7e10-4eb6-bf66-563994de4614 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-986efaab-3989-4bf3-9eed-0e5f581dbb6e');
+        const element = document.querySelector('#df-6c23faba-7e10-4eb6-bf66-563994de4614');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1398,7 +1400,7 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-37942b6c-74ca-4abb-acae-6276a2a26e09" class="colab-df-container">
+  <div id="df-15461b29-7287-497d-9be9-172b0488ad9b" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1417,27 +1419,27 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>aa</th>
+      <th>aati</th>
       <th>abad</th>
       <th>abadi</th>
+      <th>abaikan</th>
       <th>abang</th>
+      <th>abbey</th>
+      <th>abboud</th>
       <th>abc</th>
-      <th>abdi</th>
-      <th>abon</th>
-      <th>absennya</th>
-      <th>abuabu</th>
-      <th>aburaage</th>
+      <th>abdurrahman</th>
+      <th>abu</th>
       <th>...</th>
-      <th>yubanua</th>
-      <th>yunani</th>
-      <th>yunidar</th>
-      <th>yuval</th>
-      <th>zahrahateerah</th>
+      <th>zaim</th>
       <th>zaitun</th>
       <th>zaman</th>
-      <th>zealand</th>
+      <th>zamannya</th>
+      <th>ziarah</th>
+      <th>zogba</th>
       <th>zona</th>
-      <th>zonk</th>
+      <th>zone</th>
+      <th>zoo</th>
+      <th>zuleima</th>
     </tr>
   </thead>
   <tbody>
@@ -1456,7 +1458,7 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -1480,7 +1482,7 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -1504,7 +1506,7 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -1528,7 +1530,7 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -1552,7 +1554,7 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -1576,7 +1578,7 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -1600,7 +1602,7 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
+      <td>0.276395</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -1624,7 +1626,7 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -1648,7 +1650,7 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -1672,7 +1674,7 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -1683,12 +1685,12 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
     </tr>
   </tbody>
 </table>
-<p>10 rows × 5428 columns</p>
+<p>10 rows × 5275 columns</p>
 </div>
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-37942b6c-74ca-4abb-acae-6276a2a26e09')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-15461b29-7287-497d-9be9-172b0488ad9b')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1740,12 +1742,12 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
 
     <script>
       const buttonEl =
-        document.querySelector('#df-37942b6c-74ca-4abb-acae-6276a2a26e09 button.colab-df-convert');
+        document.querySelector('#df-15461b29-7287-497d-9be9-172b0488ad9b button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-37942b6c-74ca-4abb-acae-6276a2a26e09');
+        const element = document.querySelector('#df-15461b29-7287-497d-9be9-172b0488ad9b');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1808,6 +1810,15 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Tugas 1 : Crawling Berita</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="tugas_3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Penjelasan Metode Logistic Regression</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>

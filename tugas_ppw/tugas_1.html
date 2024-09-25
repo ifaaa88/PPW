@@ -182,6 +182,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas 1 : Crawling Berita</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tugas_2.html"><strong>Tugas 2 Preprocessing Dan TF IDF</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="tugas_3.html">Penjelasan Metode Logistic Regression</a></li>
 </ul>
 
     </div>
@@ -599,34 +600,34 @@ Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halama
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Influencer Makan di Resto Michelin Habiskan Rp 15,4 Juta dan Berakhir Kecewa
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Potret Cantik Enzy Storia Saat Kulineran di Paris dan New York
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Salut! Remaja Difabel Semangat Jualan Minuman dan Banjir Pujian
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Potret Mesra Sahrul Gunawan Saat Kulineran Bareng Istri
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Remaja Ini Dipaksa Jualan Makanan, Dagangannya Malah Laris Manis
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ditegur Staf Restoran Gegara Bawa Makanan dari Luar, Wanita Ini Ngamuk
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Makanan di Luar Angkasa Disebut Hambar Rasanya, Ini Penyebabnya
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Unik! Burger Ini Isinya Kepiting Utuh Berukuran Besar
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Aksi Bule Saat Pesan Makanan Via Ojol, Kocak hingga Bikin Sedih
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Qobe Mie: Sensasi Mie Pedas Baru di Bogor, Laris Manis dengan Konsep Unik
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Miris! Nasi Kotak Atlet PON Aceh-Sumut Terlalu Sederhana
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hati-hati! Ini 5 Efek Negatif Kebanyakan Makan Pedas
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pempek dan Siomay Jadi Jajanan Kaki Lima Terenak di Dunia
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Berusia Lebih dari 1.000 Tahun, Ini 10 Makanan Tertua di Indonesia
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Nyeleneh! Netizen Ini Bikin Tutup Botol Asam Padeh, Begini Tampilannya!
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Wanita Ini Dimarahi Pacar Beli Makanan Rp 44 Ribu Gegara Lagi Nabung Buat Nikah
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cicip Makanan &#39;First Class&#39; di Kereta India, Influencer Ini Puas!
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5 Restoran Ini &#39;Terselip&#39; di Perumahan Elit Jakarta Selatan
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Duh! Wanita Ini Rela Kelaparan Agar Kucingnya Bisa Makan
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ini Komentar Kaesang Soal Erina Gudono Pamer Roti Rp 400 Ribu
 </pre></div>
 </div>
 </div>
@@ -640,7 +641,7 @@ Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halama
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-1ad249cf-5254-4d12-a190-85a82ed202c1" class="colab-df-container">
+  <div id="df-5a57fe53-b529-4ee3-be26-4c1ca87de95e" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -668,422 +669,422 @@ Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halama
   <tbody>
     <tr>
       <th>0</th>
-      <td>Influencer Makan di Resto Michelin Habiskan Rp...</td>
-      <td>Rabu, 11 Sep 2024 19:30 WIB</td>
-      <td>Jakarta - Habiskan uang Rp 15,4 juta, influenc...</td>
+      <td>Potret Cantik Enzy Storia Saat Kulineran di Pa...</td>
+      <td>Rabu, 25 Sep 2024 22:00 WIB</td>
+      <td>Jakarta - Enzy Storia banjir pujian setelah ta...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Salut! Remaja Difabel Semangat Jualan Minuman ...</td>
-      <td>Rabu, 11 Sep 2024 19:00 WIB</td>
-      <td>Jakarta - Seorang remaja difabel berhasil meny...</td>
+      <td>Potret Mesra Sahrul Gunawan Saat Kulineran Bar...</td>
+      <td>Rabu, 25 Sep 2024 21:00 WIB</td>
+      <td>Jakarta - Sahrul Gunawan dan istri gagal punya...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Remaja Ini Dipaksa Jualan Makanan, Dagangannya...</td>
-      <td>Rabu, 11 Sep 2024 18:30 WIB</td>
-      <td>Jakarta - Awalnya remaja ini dipaksa untuk jua...</td>
+      <td>Ditegur Staf Restoran Gegara Bawa Makanan dari...</td>
+      <td>Rabu, 25 Sep 2024 19:30 WIB</td>
+      <td>Jakarta - Seorang pengunjung restoran jadi sak...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Makanan di Luar Angkasa Disebut Hambar Rasanya...</td>
-      <td>Rabu, 11 Sep 2024 18:00 WIB</td>
-      <td>Jakarta - Pernah membayangkan bagaimana kehidu...</td>
+      <td>Unik! Burger Ini Isinya Kepiting Utuh Berukura...</td>
+      <td>Rabu, 25 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Biasanya burger berisi patty atau da...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Aksi Bule Saat Pesan Makanan Via Ojol, Kocak h...</td>
-      <td>Rabu, 11 Sep 2024 17:30 WIB</td>
-      <td>Jakarta - Pesan makanan via aplikasi ojek onli...</td>
+      <td>Qobe Mie: Sensasi Mie Pedas Baru di Bogor, Lar...</td>
+      <td>Rabu, 25 Sep 2024 18:41 WIB</td>
+      <td>Jakarta - Ingin coba menikmati sensasi lezat m...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Miris! Nasi Kotak Atlet PON Aceh-Sumut Terlalu...</td>
-      <td>Rabu, 11 Sep 2024 17:00 WIB</td>
-      <td>Jakarta - Pagelaran Pekan Olahraga Nasional (P...</td>
+      <td>Hati-hati! Ini 5 Efek Negatif Kebanyakan Makan...</td>
+      <td>Rabu, 25 Sep 2024 18:30 WIB</td>
+      <td>Jakarta - Bagi sebagian orang makanan pedas me...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Pempek dan Siomay Jadi Jajanan Kaki Lima Teren...</td>
-      <td>Rabu, 11 Sep 2024 16:30 WIB</td>
-      <td>Jakarta - Indonesia terkenal dengan kulinernya...</td>
+      <td>Berusia Lebih dari 1.000 Tahun, Ini 10 Makanan...</td>
+      <td>Rabu, 25 Sep 2024 18:00 WIB</td>
+      <td>Jakarta - Ada makanan tradisional Indonesia ya...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>Nyeleneh! Netizen Ini Bikin Tutup Botol Asam P...</td>
-      <td>Rabu, 11 Sep 2024 16:00 WIB</td>
-      <td>Jakarta - Jika di China ada tumis batu kali, m...</td>
+      <td>Wanita Ini Dimarahi Pacar Beli Makanan Rp 44 R...</td>
+      <td>Rabu, 25 Sep 2024 17:30 WIB</td>
+      <td>Jakarta - Beli nasi campur seharga Rp 44.000, ...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Cicip Makanan 'First Class' di Kereta India, I...</td>
-      <td>Rabu, 11 Sep 2024 15:30 WIB</td>
-      <td>Jakarta - Penilaian influencer ini terhadap ma...</td>
+      <td>5 Restoran Ini 'Terselip' di Perumahan Elit Ja...</td>
+      <td>Rabu, 25 Sep 2024 17:00 WIB</td>
+      <td>Jakarta - Beberapa restoran di Jakarta Selatan...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Duh! Wanita Ini Rela Kelaparan Agar Kucingnya ...</td>
-      <td>Rabu, 11 Sep 2024 15:00 WIB</td>
-      <td>Jakarta - Tak punya uang untuk membeli makanan...</td>
+      <td>Ini Komentar Kaesang Soal Erina Gudono Pamer R...</td>
+      <td>Rabu, 25 Sep 2024 16:30 WIB</td>
+      <td>Jakarta - Unggahan Erina Gudono yang menampilk...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>10</th>
-      <td>Tanpa Gengsi! Mahasiswa Doktoral Jualan Ayam G...</td>
-      <td>Rabu, 11 Sep 2024 14:30 WIB</td>
-      <td>Jakarta - Seorang penjual ayam goreng kaki lim...</td>
+      <td>Foto Tagihan Makan di Resto Tahun 2007 Ini Bik...</td>
+      <td>Rabu, 25 Sep 2024 16:00 WIB</td>
+      <td>Jakarta - Seorang netizen di situs online memb...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>Serupa Tapi Tak Sama! Ini Perbedaan Masakan Mi...</td>
-      <td>Rabu, 11 Sep 2024 14:01 WIB</td>
-      <td>Jakarta - Seperti di Jawa, masakan Minang juga...</td>
+      <td>Perhitungan! Pengantin Ini Suguhkan Menu Murah...</td>
+      <td>Rabu, 25 Sep 2024 15:30 WIB</td>
+      <td>Jakarta - Tak semua pengantin memanjakan tamu ...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>12</th>
-      <td>Niat Hemat, Pembeli Kaget Beli Nasi Rames Harg...</td>
-      <td>Rabu, 11 Sep 2024 13:30 WIB</td>
-      <td>Jakarta - Nasi rames identik dengan harga terj...</td>
+      <td>7 Fakta Keju Amerika yang Duduki Peringkat 1 E...</td>
+      <td>Rabu, 25 Sep 2024 15:00 WIB</td>
+      <td>Jakarta - Amerika Serikat (AS) merupakan produ...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>13</th>
-      <td>Keren! Pria yang Ajak Makan Pelayan Resto Ini ...</td>
-      <td>Rabu, 11 Sep 2024 13:00 WIB</td>
-      <td>Jakarta - Pria yang menjadi pelanggan restoran...</td>
+      <td>Sedap! Ini Sate Karak Khas Ampel yang Legendar...</td>
+      <td>Rabu, 25 Sep 2024 14:30 WIB</td>
+      <td>Surabaya - Surabaya punya kuliner legendaris y...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>14</th>
-      <td>Kacau! Acara Piknik Berantakan Gegara Kompor P...</td>
-      <td>Rabu, 11 Sep 2024 12:30 WIB</td>
-      <td>Jakarta - Pergi berpiknik bersama teman-teman ...</td>
+      <td>Rontgen Tubuh Wanita Penuh Parasit Akibat Seri...</td>
+      <td>Rabu, 25 Sep 2024 14:00 WIB</td>
+      <td>Jakarta - Viral gambar rontgen yang memperliha...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>15</th>
-      <td>Nyonya Molek: Kopitiam Riau di Gading Serpong ...</td>
-      <td>Rabu, 11 Sep 2024 12:00 WIB</td>
-      <td>Jakarta - Selain kopitiam Medan, di Gading Ser...</td>
+      <td>Ternyata Sushi Asalnya Bukan dari Jepang, Tapi...</td>
+      <td>Rabu, 25 Sep 2024 13:30 WIB</td>
+      <td>Jakarta - Sushi adalah makanan yang merujuk pa...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>16</th>
-      <td>5 Fakta Sisi Kelam Garam yang Berfungsi Meleza...</td>
-      <td>Rabu, 11 Sep 2024 11:30 WIB</td>
-      <td>Jakarta - Absennya garam dalam makanan disebut...</td>
+      <td>Keren! 5 Makanan Kekinian Ini Pernah Mengudara...</td>
+      <td>Rabu, 25 Sep 2024 13:00 WIB</td>
+      <td>Jakarta - Selain makanan yang dikemas khusus u...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>17</th>
-      <td>Ini Tempat Makan Instagramable di Jakarta, Coc...</td>
-      <td>Rabu, 11 Sep 2024 11:19 WIB</td>
-      <td>Jakarta - Di tengah iruk-pikuk kehidupan perko...</td>
+      <td>Netizen Bagikan Mie Instan Favorit yang Jarang...</td>
+      <td>Rabu, 25 Sep 2024 12:30 WIB</td>
+      <td>Jakarta - Membahas mie instan memang tidak per...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>18</th>
-      <td>Jangan Salah Pilih! Ini Tempat Makan Ayam Baka...</td>
-      <td>Rabu, 11 Sep 2024 11:14 WIB</td>
-      <td>Jakarta - Jakarta sebagai kota metropolitan ti...</td>
+      <td>Nasi Uduk Nikmat 79: Nasi Uduk Prasmanan denga...</td>
+      <td>Rabu, 25 Sep 2024 12:00 WIB</td>
+      <td>Jakarta - Bukan pakai lauk Betawi, makan nasi ...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>19</th>
-      <td>Ada Camilan Enak, Ini Rekomendasi Tempat Nongk...</td>
-      <td>Rabu, 11 Sep 2024 11:02 WIB</td>
-      <td>Jakarta - Jakarta sebagai ibu kota yang dinami...</td>
+      <td>Lebih Besar dari Kepala Orang Dewasa! Berat Ci...</td>
+      <td>Rabu, 25 Sep 2024 11:30 WIB</td>
+      <td>Jakarta - Sebuah restoran viral usai menawarka...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>20</th>
-      <td>Resep Salad Mangga dan Timun yang Segar dan Co...</td>
-      <td>Rabu, 11 Sep 2024 11:00 WIB</td>
-      <td>Tentang Bahan Langkah Jakarta - Bahan segar ya...</td>
+      <td>Resep Pisang Gulung Cokelat, Renyah Manis untu...</td>
+      <td>Rabu, 25 Sep 2024 11:00 WIB</td>
+      <td>Tentang Bahan Langkah Jakarta - Pisang berbalu...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>21</th>
-      <td>Zonk! Beli 1 Kg Bawang Bombai Pembeli Ini Hany...</td>
-      <td>Rabu, 11 Sep 2024 10:30 WIB</td>
-      <td>Jakarta - Pelanggan ini menceritakan kejadian ...</td>
+      <td>Mirip Dalgona! Ini Kreasi Whipped Honey Latte ...</td>
+      <td>Rabu, 25 Sep 2024 10:30 WIB</td>
+      <td>Jakarta - Kreasi kopi banyak sekali macamnya, ...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>22</th>
-      <td>Resep Sup Ayam Asam Pedas ala Thailand Untuk M...</td>
-      <td>Rabu, 11 Sep 2024 10:00 WIB</td>
-      <td>Tentang Bahan Langkah Jakarta - Jika bosan den...</td>
+      <td>Resep Ceker Ayam Bumbu Ngohiong, Lembut Gurih ...</td>
+      <td>Rabu, 25 Sep 2024 10:00 WIB</td>
+      <td>Tentang Bahan Langkah Jakarta - Kenyal gurih c...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>23</th>
-      <td>Chef Pribadi Nikita Willy hingga Fakta Kopi Ex...</td>
-      <td>Rabu, 11 Sep 2024 09:30 WIB</td>
-      <td>Jakarta - Nikita Willy dan Indra Priawan mempe...</td>
+      <td>Bakmi Ayam Enak di Sunter hingga YouTuber Lepe...</td>
+      <td>Rabu, 25 Sep 2024 09:30 WIB</td>
+      <td>Jakarta - Banyak bakmi ayam kampung terkenal e...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>24</th>
-      <td>3 Resep Rujak Berbumbu Pedas Gurih yang Menyeg...</td>
-      <td>Rabu, 11 Sep 2024 09:00 WIB</td>
-      <td>Tentang Bahan Langkah Jakarta - Rujak yang asa...</td>
+      <td>3 Resep Lontong Sayur Khas Jawa yang Gurih Ber...</td>
+      <td>Rabu, 25 Sep 2024 09:00 WIB</td>
+      <td>Tentang Bahan Langkah Jakarta - Potongan lonto...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>25</th>
-      <td>Ria SW Kulineran di Belanda, Jajan Kentang Gor...</td>
-      <td>Rabu, 11 Sep 2024 08:30 WIB</td>
-      <td>Jakarta - Ria SW kembali aktif dengan mengelua...</td>
+      <td>Kakigori Thai Tea yang Legit Segar Ada di Kafe...</td>
+      <td>Rabu, 25 Sep 2024 08:30 WIB</td>
+      <td>Jakarta - Furawa Cafe merupakan salah satu kaf...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>26</th>
-      <td>Benarkah Kulit Nanas Tak Mempan Dibakar? Ini A...</td>
-      <td>Rabu, 11 Sep 2024 08:00 WIB</td>
-      <td>Jakarta - Ada keajaiban dari buah nanas tak ha...</td>
+      <td>Jangan Ditiru! 5 Pola Diet Ini Bisa Bahayakan ...</td>
+      <td>Rabu, 25 Sep 2024 08:00 WIB</td>
+      <td>Jakarta - Berbagai metode diet dilakukan guna ...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>27</th>
-      <td>Mengapa Kopi Jadi Tak Enak Setelah Dipanaskan ...</td>
-      <td>Rabu, 11 Sep 2024 07:30 WIB</td>
-      <td>Jakarta - Kopi yang dipanaskan ulang disebutka...</td>
+      <td>Berusia Ratusan Tahun, 5 Kedai Kopi Kuno Ini P...</td>
+      <td>Rabu, 25 Sep 2024 07:30 WIB</td>
+      <td>Jakarta - Berbeda dengan kafe modern, beberapa...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>28</th>
-      <td>Kini Ada Spaghetti Carbonara Kalengan, Para Ch...</td>
-      <td>Rabu, 11 Sep 2024 07:00 WIB</td>
-      <td>Jakarta - Kini ada spaghetti carbonara kalenga...</td>
+      <td>5 Makanan 'Buruk' Ini Ternyata Bagus untuk Tin...</td>
+      <td>Rabu, 25 Sep 2024 07:00 WIB</td>
+      <td>Jakarta - Perubahan musim seringkali membuat s...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>29</th>
-      <td>5 Tips Ampuh Turun BB dari Dokter yang Dulu Be...</td>
-      <td>Rabu, 11 Sep 2024 06:00 WIB</td>
-      <td>Jakarta - Dokter ini membagikan lima tips ampu...</td>
+      <td>5 Makanan Pemicu Asam Urat, Waspada Konsumsi S...</td>
+      <td>Rabu, 25 Sep 2024 06:00 WIB</td>
+      <td>Jakarta - Asam urat perlu diwaspadai agar tida...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>30</th>
-      <td>5 Racikan Kunyit Ini Bantu Atasi Perut Kembung...</td>
-      <td>Rabu, 11 Sep 2024 05:00 WIB</td>
-      <td>Jakarta - Khasiat anti-inflamasi pada kunyit t...</td>
+      <td>5 Khasiat Racikan Teh Jahe Campur Cengkeh untu...</td>
+      <td>Rabu, 25 Sep 2024 05:00 WIB</td>
+      <td>Jakarta - Racikan rempah-rempah yang diseduh m...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>31</th>
-      <td>Keseruan Ayu Dewi Makan Bareng Suami hingga Ma...</td>
-      <td>Selasa, 10 Sep 2024 22:04 WIB</td>
-      <td>Jakarta - Ayu Dewi baru saja merayakan ulang t...</td>
+      <td>Atta Halilintar Siaran Langsung Jajan Gudeg da...</td>
+      <td>Selasa, 24 Sep 2024 22:00 WIB</td>
+      <td>Jakarta - Atta Halilintar masih aktif jadi You...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>32</th>
-      <td>Pose Keren Amanda Rawles saat Makan Es Krim di...</td>
-      <td>Selasa, 10 Sep 2024 21:00 WIB</td>
-      <td>Jakarta - Perankan karakter Laura, Amanda Rawl...</td>
+      <td>Marchella FP Penulis Sekaligus Foodies yang Su...</td>
+      <td>Selasa, 24 Sep 2024 21:00 WIB</td>
+      <td>Jakarta - Penulis Marchella FP dikabarkan teng...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>33</th>
-      <td>Konsumsi 6 Jenis Makanan Ini Bisa Picu Insomni...</td>
-      <td>Selasa, 10 Sep 2024 19:30 WIB</td>
-      <td>Jakarta - Asupan makanan berpengaruh pada pola...</td>
+      <td>Apa Benar Makan Malam Bikin BB Naik? Ini Penje...</td>
+      <td>Selasa, 24 Sep 2024 19:30 WIB</td>
+      <td>Jakarta - Dokter Tirta yang aktif membagikan t...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>34</th>
-      <td>Begini Pengalaman Jadi Private Chef Keluarga N...</td>
-      <td>Selasa, 10 Sep 2024 19:00 WIB</td>
-      <td>Jakarta - Menjadi chef tak hanya untuk dapur r...</td>
+      <td>Jerome Polin Kulineran di Jepang Mencari Resto...</td>
+      <td>Selasa, 24 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Jerome Polin kembali membagikan mome...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>35</th>
-      <td>Duh! Kepala Sekolah Ini Dipecat Usai Dapat Had...</td>
-      <td>Selasa, 10 Sep 2024 18:30 WIB</td>
-      <td>Jakarta - Kisah mengenaskan akibat makanan dia...</td>
+      <td>Ada di Kompleks Perumahan, Makanan Kekinian hi...</td>
+      <td>Selasa, 24 Sep 2024 18:30 WIB</td>
+      <td>Jakarta - Kini semakin banyak tempat makan hin...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>36</th>
-      <td>5 Menu Bioskop Paling Unik, Olahan Serangga hi...</td>
-      <td>Selasa, 10 Sep 2024 18:00 WIB</td>
-      <td>Jakarta - Biasanya makanan yang dinikmati di b...</td>
+      <td>Tak Sesuai Ekspektasi! 10 Buah dan Sayuran Ini...</td>
+      <td>Selasa, 24 Sep 2024 18:00 WIB</td>
+      <td>Jakarta - Kompilasi buah dan sayuran berikut i...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>37</th>
-      <td>Ini 4 Donat yang Viral dan Jadi Buruan Warga J...</td>
-      <td>Selasa, 10 Sep 2024 17:30 WIB</td>
-      <td>Jakarta - Meskipun donat tergolong camilan kla...</td>
+      <td>YouTuber Mukbang Terkenal Ini Ketahuan Lepeh M...</td>
+      <td>Selasa, 24 Sep 2024 17:30 WIB</td>
+      <td>Jakarta - Ketahuan muntahkan makanan saat buat...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>38</th>
-      <td>Ini Asal Muasal dan Bahan Susu Capit yang Vira...</td>
-      <td>Selasa, 10 Sep 2024 17:00 WIB</td>
-      <td>Jakarta - Tengah menjadi tren di TikTok cara m...</td>
+      <td>5 Kulineran Nikita Mirzani yang Paling Banyak ...</td>
+      <td>Selasa, 24 Sep 2024 17:00 WIB</td>
+      <td>Jakarta - Nikita Mirzani aktif mengunggah kont...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>39</th>
-      <td>4 Bisnis Kuliner Milik Baim Wong, Roti Romi hi...</td>
-      <td>Selasa, 10 Sep 2024 16:30 WIB</td>
-      <td>Jakarta - Baim Wong diketahui memiliki beberap...</td>
+      <td>Dulu Jualan Teh Pakai Sepeda, Sekarang Pria In...</td>
+      <td>Selasa, 24 Sep 2024 16:30 WIB</td>
+      <td>Jakarta - Kisah menarik datang dari penjual te...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>40</th>
-      <td>5 Eksperimen Masak ala Mursid yang Berawal dar...</td>
-      <td>Selasa, 10 Sep 2024 16:00 WIB</td>
-      <td>Jakarta - TikToker Mursid menjadi sorotan usai...</td>
+      <td>Nasi Empal Bu Marie Turut Melestarikan Kekayaa...</td>
+      <td>Selasa, 24 Sep 2024 16:23 WIB</td>
+      <td>Jakarta - Indonesia dengan lebih dari 17.000 p...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>41</th>
-      <td>Meskipun Sederhana, Warung Nasi Ini Punya Lauk...</td>
-      <td>Selasa, 10 Sep 2024 15:30 WIB</td>
-      <td>Jakarta - Meskipun namanya jarang terdengar, t...</td>
+      <td>5 Mie Instan Terenak di Dunia versi Bon Apetit...</td>
+      <td>Selasa, 24 Sep 2024 16:00 WIB</td>
+      <td>Jakarta - Mie instan di dunia sangat beragam j...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>42</th>
-      <td>Bikin Takjub! Ini 7 Tempat Makan dengan Pemand...</td>
-      <td>Selasa, 10 Sep 2024 15:00 WIB</td>
-      <td>Jakarta - Makan di restoran tradisional atau m...</td>
+      <td>10 Potret Pizza 'Terkutuk' yang Tampilannya Bi...</td>
+      <td>Selasa, 24 Sep 2024 15:30 WIB</td>
+      <td>Jakarta - Beberapa kreasi pizza di dunia diseb...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>43</th>
-      <td>Dijamin Kenyang Nendang! Di Bakso Sak Waregmu ...</td>
-      <td>Selasa, 10 Sep 2024 14:30 WIB</td>
-      <td>Sidoarjo - Tempat makan bakso di Sidoarjo ini ...</td>
+      <td>Kacau! Penerbangan Ini Dibatalkan Gegara Ada T...</td>
+      <td>Selasa, 24 Sep 2024 15:00 WIB</td>
+      <td>Jakarta - Sebuah kehebohan terjadi di dalam pe...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>44</th>
-      <td>Unik Rasanya! Perpaduan Kulit Tahu Diisi Es Kr...</td>
-      <td>Selasa, 10 Sep 2024 13:30 WIB</td>
-      <td>Jakarta - Kombinasi makanan unik banyak yang b...</td>
+      <td>Menu Korea Modern Disajikan dengan Kreatif di ...</td>
+      <td>Selasa, 24 Sep 2024 14:30 WIB</td>
+      <td>Jakarta - Restoran Orient8 dikenal dengan menu...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>45</th>
-      <td>Ini Keju Paling Bau di Dunia, Aromanya Seperti...</td>
-      <td>Selasa, 10 Sep 2024 13:00 WIB</td>
-      <td>Jakarta - Dari sekian banyak jenis keju di dun...</td>
+      <td>5 Resto Berkonsep Paling Aneh, Pengunjung Dima...</td>
+      <td>Selasa, 24 Sep 2024 14:00 WIB</td>
+      <td>Jakarta - Tampil beda dengan restoran lainnya,...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>46</th>
-      <td>Cara Dapat Jodoh ala Spanyol, Pakai Buah Nanas...</td>
-      <td>Selasa, 10 Sep 2024 12:30 WIB</td>
-      <td>Jakarta - Bukan pakai aplikasi kencan, kini me...</td>
+      <td>Orang Jepang Gemar Makan Ikan Mentah, Ini 5 Fa...</td>
+      <td>Selasa, 24 Sep 2024 13:30 WIB</td>
+      <td>Jakarta - Orang Jepang punya kebiasaan konsums...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>47</th>
-      <td>Empal Gentong Cirebon yang Gurih Pekat Kuahnya...</td>
-      <td>Selasa, 10 Sep 2024 12:00 WIB</td>
-      <td>Jakarta - Makan siang dengan empal gentong kha...</td>
+      <td>Keren! Pelayan Ini Selamatkan Pelanggan dari M...</td>
+      <td>Selasa, 24 Sep 2024 13:00 WIB</td>
+      <td>Jakarta - Aksi yang dilakukan pelayan restoran...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>48</th>
-      <td>Nagita ke Hong Kong, Sarapan di Kopitiam hingg...</td>
-      <td>Selasa, 10 Sep 2024 11:30 WIB</td>
-      <td>Jakarta - Nagita Slavina beberapa hari lalu be...</td>
+      <td>Ayam Goreng Terenak di Jepang Ini Lokasinya di...</td>
+      <td>Selasa, 24 Sep 2024 12:30 WIB</td>
+      <td>Jakarta - Di Jepang, ada banyak tempat makan t...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>49</th>
-      <td>Dua Tips Jitu Potong Bawang Bombai Agar Mata T...</td>
-      <td>Selasa, 10 Sep 2024 11:00 WIB</td>
-      <td>Jakarta - Saat memotong bawang bombai, banyak ...</td>
+      <td>5 Bakmi Ayam Kampung Enak di Sunter dan Kelapa...</td>
+      <td>Selasa, 24 Sep 2024 12:00 WIB</td>
+      <td>Jakarta - Bagi pecinta kuliner bakmi, pastinya...</td>
       <td>Makanan</td>
     </tr>
     <tr>
       <th>50</th>
-      <td>Kolombia Buru Kuda Nil yang Dipopulerkan Pablo...</td>
-      <td>Rabu, 11 Sep 2024 19:37 WIB</td>
-      <td>Jakarta - Pengadilan Kolombia menyerukan perbu...</td>
+      <td>6 Fakta Menarik Atlantis, Kota Misterius yang ...</td>
+      <td>Rabu, 25 Sep 2024 23:05 WIB</td>
+      <td>Jakarta - Pembahasan mengenai kota Atlantis ta...</td>
       <td>Travel</td>
     </tr>
     <tr>
       <th>51</th>
-      <td>Sandiaga: Keterbukaan Informasi Publik Sangat ...</td>
-      <td>Rabu, 11 Sep 2024 19:15 WIB</td>
-      <td>Jakarta - Salah satu faktor pendukung berkemba...</td>
+      <td>Tragedi Pawang Gajah di Bali Tewas Diinjak Hew...</td>
+      <td>Rabu, 25 Sep 2024 22:10 WIB</td>
+      <td>Gianyar - Seorang pawang gajah di Bali bernama...</td>
       <td>Travel</td>
     </tr>
     <tr>
       <th>52</th>
-      <td>Genjot Pariwisata di Event MotoGP Mandalika</td>
-      <td>Rabu, 11 Sep 2024 18:42 WIB</td>
-      <td>Tangerang - Garuda Indonesia menjadi Offisial ...</td>
+      <td>Jangan Coba-coba Telanjang Dada di Malaga, Bis...</td>
+      <td>Rabu, 25 Sep 2024 21:34 WIB</td>
+      <td>Jakarta - Malaga, destinasi populer di Spanyol...</td>
       <td>Travel</td>
     </tr>
     <tr>
       <th>53</th>
-      <td>Pesawat Gagal Terbang ke Singapura gegara Masa...</td>
-      <td>Rabu, 11 Sep 2024 18:35 WIB</td>
-      <td>Jakarta - Maskapai Air New Zealand direncanaka...</td>
+      <td>Labuan Bajo Tak Lepas dari Bahaya Tsunami, BNP...</td>
+      <td>Rabu, 25 Sep 2024 20:31 WIB</td>
+      <td>Jakarta - Labuan Bajo, Manggarai Barat, Nusa T...</td>
       <td>Travel</td>
     </tr>
     <tr>
       <th>54</th>
-      <td>Tebet Eco Park, Kombinasi Sempurna antara Alam...</td>
-      <td>Rabu, 11 Sep 2024 18:10 WIB</td>
-      <td>Jakarta - Berkunjung ke Tebet Eco Park, suasan...</td>
+      <td>Kapsul Waktu! Catatan Arkeolog 200 Tahun Lalu ...</td>
+      <td>Rabu, 25 Sep 2024 20:05 WIB</td>
+      <td>Jakarta - Harta karun tak hanya benda saja, ta...</td>
       <td>Travel</td>
     </tr>
     <tr>
       <th>55</th>
-      <td>Makna di Balik Prosesi Sekaten Solo yang Sempa...</td>
-      <td>Rabu, 11 Sep 2024 17:35 WIB</td>
-      <td>Jakarta - Acara tahunan Sekaten di Solo kali i...</td>
+      <td>Jembatan Ikonik Kota Dunia Ini Kini Hanya Bole...</td>
+      <td>Rabu, 25 Sep 2024 19:31 WIB</td>
+      <td>Jakarta - Ibu kota Prancis, Paris, menjadi per...</td>
       <td>Travel</td>
     </tr>
     <tr>
       <th>56</th>
-      <td>5 Barang yang Wajib Dibawa saat Konser Bruno Mars</td>
-      <td>Rabu, 11 Sep 2024 17:04 WIB</td>
-      <td>Jakarta - Bruno Mars akan menggelar konser di ...</td>
+      <td>Pencarian Kapibara Kabur Dihentikan karena Ter...</td>
+      <td>Rabu, 25 Sep 2024 19:05 WIB</td>
+      <td>Jakarta - Kapibara kabur dari kandangnya di Th...</td>
       <td>Travel</td>
     </tr>
     <tr>
       <th>57</th>
-      <td>Sejak Imigrasi Biometrik, Ada Lebih Banyak Tur...</td>
-      <td>Rabu, 11 Sep 2024 16:33 WIB</td>
-      <td>Jakarta - Sejak diperkenalkan jalur imigrasi o...</td>
+      <td>Berburu 'Harta Karun' di Pasar Loak Jatinegara</td>
+      <td>Rabu, 25 Sep 2024 19:00 WIB</td>
+      <td>Jakarta - Pasar Loak Jatinegara atau Jembatan ...</td>
       <td>Travel</td>
     </tr>
     <tr>
       <th>58</th>
-      <td>Lagi, Turis Tewas saat Diving di Great Barrier...</td>
-      <td>Rabu, 11 Sep 2024 16:10 WIB</td>
-      <td>Queensland - Insiden turis tewas kembali terja...</td>
+      <td>Gunung Semeru Ditutup Menahun, Lalu Muncul 38....</td>
+      <td>Rabu, 25 Sep 2024 18:31 WIB</td>
+      <td>Jakarta - Gunung Semeru telah ditutup bertahun...</td>
       <td>Travel</td>
     </tr>
     <tr>
       <th>59</th>
-      <td>Super Air Jet Buka Rute Baru Pangkalpinang ke ...</td>
-      <td>Rabu, 11 Sep 2024 15:35 WIB</td>
-      <td>Jakarta - Super AIr Jet membuka dua rute baru ...</td>
+      <td>Healing Bisa di Jakarta, Bikin Keramik di Muse...</td>
+      <td>Rabu, 25 Sep 2024 18:07 WIB</td>
+      <td>Jakarta - Andai tak punya waktu panjang untuk ...</td>
       <td>Travel</td>
     </tr>
   </tbody>
@@ -1092,7 +1093,7 @@ Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halama
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-1ad249cf-5254-4d12-a190-85a82ed202c1')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-5a57fe53-b529-4ee3-be26-4c1ca87de95e')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1144,12 +1145,12 @@ Untuk setiap artikel, kode akan mencari dan membuka link yang mengarah ke halama
 
     <script>
       const buttonEl =
-        document.querySelector('#df-1ad249cf-5254-4d12-a190-85a82ed202c1 button.colab-df-convert');
+        document.querySelector('#df-5a57fe53-b529-4ee3-be26-4c1ca87de95e button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-1ad249cf-5254-4d12-a190-85a82ed202c1');
+        const element = document.querySelector('#df-5a57fe53-b529-4ee3-be26-4c1ca87de95e');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
