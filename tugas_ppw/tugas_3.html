@@ -60,6 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'tugas_ppw/tugas_3';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tugas 4" href="tugas_4.html" />
     <link rel="prev" title="Tugas 2 Preprocessing Dan TF IDF" href="tugas_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -179,10 +180,12 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="tugas_1.html">Tugas 1 : Crawling Berita</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tugas_1.html"><strong>Tugas 1 : Crawling Berita</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="tugas_2.html"><strong>Tugas 2 Preprocessing Dan TF IDF</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Tugas 3_Metode Logistic Regression</strong></a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="tugas_4.html"><strong>Tugas 4</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="tugas_5.html"><strong>Tugas 5 Keyword Extraction</strong></a></li>
 </ul>
 
     </div>
@@ -472,7 +475,7 @@ Ini berguna untuk memeriksa data secara sekilas dan memastikan bahwa data dari f
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-b9214dde-aedb-4f69-a4af-caa424d2e8f2" class="colab-df-container">
+  <div id="df-e74db0be-9bd5-4aef-97ae-eae8d93b493c" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -504,58 +507,58 @@ Ini berguna untuk memeriksa data secara sekilas dan memastikan bahwa data dari f
   <tbody>
     <tr>
       <th>0</th>
-      <td>Potret Cantik Enzy Storia Saat Kulineran di Pa...</td>
-      <td>Rabu, 25 Sep 2024 22:00 WIB</td>
-      <td>Jakarta - Enzy Storia banjir pujian setelah ta...</td>
+      <td>Momen Nabilla Aprillya saat Nikmati Steak dan ...</td>
+      <td>Rabu, 16 Okt 2024 22:00 WIB</td>
+      <td>Jakarta - Nabilla Aprillya, selebgram yang dii...</td>
       <td>Makanan</td>
-      <td>Jakarta  Enzy Storia banjir pujian setelah tam...</td>
-      <td>jakarta  enzy storia banjir pujian setelah tam...</td>
-      <td>['jakarta', 'enzy', 'storia', 'banjir', 'pujia...</td>
-      <td>jakarta enzy storia banjir pujian tampil paris...</td>
+      <td>Jakarta  Nabilla Aprillya selebgram yang diisu...</td>
+      <td>jakarta  nabilla aprillya selebgram yang diisu...</td>
+      <td>['jakarta', 'nabilla', 'aprillya', 'selebgram'...</td>
+      <td>jakarta nabilla aprillya selebgram diisukan is...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Potret Mesra Sahrul Gunawan Saat Kulineran Bar...</td>
-      <td>Rabu, 25 Sep 2024 21:00 WIB</td>
-      <td>Jakarta - Sahrul Gunawan dan istri gagal punya...</td>
+      <td>Veronica Tan Jadi Calon Menteri Prabowo, Terny...</td>
+      <td>Rabu, 16 Okt 2024 21:00 WIB</td>
+      <td>Jakarta - Veronica Tan mencuri perhatian setel...</td>
       <td>Makanan</td>
-      <td>Jakarta  Sahrul Gunawan dan istri gagal punya ...</td>
-      <td>jakarta  sahrul gunawan dan istri gagal punya ...</td>
-      <td>['jakarta', 'sahrul', 'gunawan', 'dan', 'istri...</td>
-      <td>jakarta sahrul gunawan istri gagal anak mencob...</td>
+      <td>Jakarta  Veronica Tan mencuri perhatian setela...</td>
+      <td>jakarta  veronica tan mencuri perhatian setela...</td>
+      <td>['jakarta', 'veronica', 'tan', 'mencuri', 'per...</td>
+      <td>jakarta veronica tan mencuri perhatian mengunj...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Ditegur Staf Restoran Gegara Bawa Makanan dari...</td>
-      <td>Rabu, 25 Sep 2024 19:30 WIB</td>
-      <td>Jakarta - Seorang pengunjung restoran jadi sak...</td>
+      <td>Karyawan Curi Kue Milik Rekannya dan Ternyata ...</td>
+      <td>Rabu, 16 Okt 2024 19:30 WIB</td>
+      <td>Jakarta - Mencuri kue milik rekan kerjanya dar...</td>
       <td>Makanan</td>
-      <td>Jakarta  Seorang pengunjung restoran jadi saks...</td>
-      <td>jakarta  seorang pengunjung restoran jadi saks...</td>
-      <td>['jakarta', 'seorang', 'pengunjung', 'restoran...</td>
-      <td>jakarta pengunjung restoran saksi mata keribut...</td>
+      <td>Jakarta  Mencuri kue milik rekan kerjanya dari...</td>
+      <td>jakarta  mencuri kue milik rekan kerjanya dari...</td>
+      <td>['jakarta', 'mencuri', 'kue', 'milik', 'rekan'...</td>
+      <td>jakarta mencuri kue milik rekan kerjanya kulka...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Unik! Burger Ini Isinya Kepiting Utuh Berukura...</td>
-      <td>Rabu, 25 Sep 2024 19:00 WIB</td>
-      <td>Jakarta - Biasanya burger berisi patty atau da...</td>
+      <td>5 Kisah Eks Pramugari Sukses Jualan Lontong Sa...</td>
+      <td>Rabu, 16 Okt 2024 19:00 WIB</td>
+      <td>Jakarta - Sebagian orang menilai profesi sebag...</td>
       <td>Makanan</td>
-      <td>Jakarta  Biasanya burger berisi patty atau dag...</td>
-      <td>jakarta  biasanya burger berisi patty atau dag...</td>
-      <td>['jakarta', 'biasanya', 'burger', 'berisi', 'p...</td>
-      <td>jakarta burger berisi patty daging sapi bundar...</td>
+      <td>Jakarta  Sebagian orang menilai profesi sebaga...</td>
+      <td>jakarta  sebagian orang menilai profesi sebaga...</td>
+      <td>['jakarta', 'sebagian', 'orang', 'menilai', 'p...</td>
+      <td>jakarta orang menilai profesi pramugari keren ...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Qobe Mie: Sensasi Mie Pedas Baru di Bogor, Lar...</td>
-      <td>Rabu, 25 Sep 2024 18:41 WIB</td>
-      <td>Jakarta - Ingin coba menikmati sensasi lezat m...</td>
+      <td>Wow! Nasi Lemak Lauk Seafood Ini Harganya Rp 1...</td>
+      <td>Rabu, 16 Okt 2024 18:30 WIB</td>
+      <td>Jakarta - Nasi lemak di Malaysia harganya mema...</td>
       <td>Makanan</td>
-      <td>Jakarta  Ingin coba menikmati sensasi lezat mi...</td>
-      <td>jakarta  ingin coba menikmati sensasi lezat mi...</td>
-      <td>['jakarta', 'ingin', 'coba', 'menikmati', 'sen...</td>
-      <td>jakarta coba menikmati sensasi lezat mie pedas...</td>
+      <td>Jakarta  Nasi lemak di Malaysia harganya meman...</td>
+      <td>jakarta  nasi lemak di malaysia harganya meman...</td>
+      <td>['jakarta', 'nasi', 'lemak', 'di', 'malaysia',...</td>
+      <td>jakarta nasi lemak malaysia harganya variatif ...</td>
     </tr>
   </tbody>
 </table>
@@ -563,7 +566,7 @@ Ini berguna untuk memeriksa data secara sekilas dan memastikan bahwa data dari f
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-b9214dde-aedb-4f69-a4af-caa424d2e8f2')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-e74db0be-9bd5-4aef-97ae-eae8d93b493c')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -615,12 +618,12 @@ Ini berguna untuk memeriksa data secara sekilas dan memastikan bahwa data dari f
 
     <script>
       const buttonEl =
-        document.querySelector('#df-b9214dde-aedb-4f69-a4af-caa424d2e8f2 button.colab-df-convert');
+        document.querySelector('#df-e74db0be-9bd5-4aef-97ae-eae8d93b493c button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-b9214dde-aedb-4f69-a4af-caa424d2e8f2');
+        const element = document.querySelector('#df-e74db0be-9bd5-4aef-97ae-eae8d93b493c');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -658,6 +661,16 @@ df[‘stopword_removal’] adalah kolom dalam DataFrame df yang berisi teks yang
 Tujuan Kode: Teknik TF-IDF digunakan untuk mengubah teks dalam kolom stopword_removal menjadi representasi numerik berdasarkan bobot penting setiap kata. Bobot ini dihitung berdasarkan frekuensi setiap kata muncul dalam dokumen dan seluruh kumpulan dokumen, sehingga model pembelajaran mesin dapat lebih mudah memahami data teks.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">accuracy_score</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
 
 <span class="c1"># Menginisialisasi TfidfVectorizer</span>
@@ -665,6 +678,23 @@ Tujuan Kode: Teknik TF-IDF digunakan untuk mengubah teks dalam kolom stopword_re
 
 <span class="c1"># Menghitung TF-IDF</span>
 <span class="n">tfidf_matrix</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;stopword_removal&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menggunakan kolom &#39;cleaned_text&#39; sebagai teks input dan &#39;kategori&#39; sebagai label</span>
+<span class="n">texts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;stopword_removal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>  <span class="c1"># Mengganti NaN dengan string kosong jika ada</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;kategori&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;unknown&#39;</span><span class="p">)</span>  <span class="c1"># Mengganti NaN di kategori jika ada</span>
+
+<span class="c1"># Melihat label yang digunakan untuk klasifikasi</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">labels</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Makanan&#39; &#39;Travel&#39;]
 </pre></div>
 </div>
 </div>
@@ -689,7 +719,7 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-deda644a-179d-4057-b307-a7e3924b6732" class="colab-df-container">
+  <div id="df-b93a1fc8-8443-49cb-93bf-22c32207489d" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -708,27 +738,27 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>aati</th>
       <th>abad</th>
-      <th>abadi</th>
-      <th>abaikan</th>
+      <th>abai</th>
       <th>abang</th>
-      <th>abbey</th>
-      <th>abboud</th>
-      <th>abc</th>
-      <th>abdurrahman</th>
-      <th>abu</th>
+      <th>abdul</th>
+      <th>abdullah</th>
+      <th>abis</th>
+      <th>ac</th>
+      <th>acar</th>
+      <th>acara</th>
+      <th>access</th>
       <th>...</th>
-      <th>zaim</th>
-      <th>zaitun</th>
+      <th>yusuf</th>
+      <th>zacky</th>
+      <th>zainuddin</th>
+      <th>zalianty</th>
       <th>zaman</th>
-      <th>zamannya</th>
-      <th>ziarah</th>
-      <th>zogba</th>
+      <th>zat</th>
+      <th>zdenek</th>
       <th>zona</th>
-      <th>zone</th>
-      <th>zoo</th>
-      <th>zuleima</th>
+      <th>zonk</th>
+      <th>zoologi</th>
     </tr>
   </thead>
   <tbody>
@@ -747,9 +777,9 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -771,9 +801,9 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -795,9 +825,9 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -819,9 +849,9 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -843,9 +873,9 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -867,9 +897,9 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.035424</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -891,9 +921,9 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.276395</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -915,9 +945,9 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -939,9 +969,9 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -963,9 +993,9 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -974,12 +1004,12 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
     </tr>
   </tbody>
 </table>
-<p>10 rows × 5275 columns</p>
+<p>10 rows × 5483 columns</p>
 </div>
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-deda644a-179d-4057-b307-a7e3924b6732')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-b93a1fc8-8443-49cb-93bf-22c32207489d')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1031,12 +1061,12 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
 
     <script>
       const buttonEl =
-        document.querySelector('#df-deda644a-179d-4057-b307-a7e3924b6732 button.colab-df-convert');
+        document.querySelector('#df-b93a1fc8-8443-49cb-93bf-22c32207489d button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-deda644a-179d-4057-b307-a7e3924b6732');
+        const element = document.querySelector('#df-b93a1fc8-8443-49cb-93bf-22c32207489d');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1059,492 +1089,170 @@ tfidf_df akan menyimpan nilai-nilai TF-IDF untuk setiap kata di setiap dokumen s
   </div>
   </div></div>
 </div>
-<p><strong>penggunaan metode logistic regression</strong></p>
-<p>import library untuk analisis data dan pembuatan model klasifikasi menggunakan regresi logistik diimpor melalui kode di atas. Pertama, pandas diimpor untuk memudahkan manipulasi dan analisis dataset yang disimpan dalam bentuk tabel. Kemudian, fungsi train_test_split dari pustaka sklearn.model_selection digunakan untuk membagi dataset menjadi dua bagian, satu untuk pengujian model dan satu lagi untuk pelatihan model, sehingga kita dapat mengevaluasi kinerja model dengan data yang tidak terlihat sebelumnya. Model regresi logistik diimpor dari sklearn.linear_model untuk digunakan dalam klasifikasi, Terakhir, untuk menilai kinerja model setelah dilatih, beberapa metrik evaluasi diimpor dari sklearn.metrics, termasuk classification_report, confusion_matrix, dan accuracy_score. Meterik ini memberikan informasi tentang ketepatan, jumlah prediksi yang benar dan salah, serta akurasi keseluruhan dari model yang diuji.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">accuracy_score</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Misalkan kolom &#39;label&#39; adalah kolom yang berisi label target di file CSV-mu</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;kategori&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membagi data menjadi data latih dan uji (80% latih, 20% uji)</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">tfidf_matrix</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membuat model Logistic Regression</span>
-<span class="n">logreg</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Melatih model dengan data latih</span>
-<span class="n">logreg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="c1"># Melakukan transformasi TF-IDF</span>
+<span class="n">tfidf</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">max_features</span><span class="o">=</span><span class="mi">10000</span><span class="p">)</span>  <span class="c1"># Menggunakan 5000 fitur teratas</span>
+<span class="n">X_tfidf</span> <span class="o">=</span> <span class="n">tfidf</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">texts</span><span class="p">)</span>
+
+<span class="c1"># Memisahkan dataset menjadi training dan testing</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_tfidf</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Melihat bentuk dari hasil TF-IDF</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Shape of X_train:&quot;</span><span class="p">,</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Shape of X_test:&quot;</span><span class="p">,</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><style>#sk-container-id-1 {
-  /* Definition of color scheme common for light and dark mode */
-  --sklearn-color-text: black;
-  --sklearn-color-line: gray;
-  /* Definition of color scheme for unfitted estimators */
-  --sklearn-color-unfitted-level-0: #fff5e6;
-  --sklearn-color-unfitted-level-1: #f6e4d2;
-  --sklearn-color-unfitted-level-2: #ffe0b3;
-  --sklearn-color-unfitted-level-3: chocolate;
-  /* Definition of color scheme for fitted estimators */
-  --sklearn-color-fitted-level-0: #f0f8ff;
-  --sklearn-color-fitted-level-1: #d4ebff;
-  --sklearn-color-fitted-level-2: #b3dbfd;
-  --sklearn-color-fitted-level-3: cornflowerblue;
-
-  /* Specific color for light theme */
-  --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
-  --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, white)));
-  --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
-  --sklearn-color-icon: #696969;
-
-  @media (prefers-color-scheme: dark) {
-    /* Redefinition of color scheme for dark theme */
-    --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
-    --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, #111)));
-    --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
-    --sklearn-color-icon: #878787;
-  }
-}
-
-#sk-container-id-1 {
-  color: var(--sklearn-color-text);
-}
-
-#sk-container-id-1 pre {
-  padding: 0;
-}
-
-#sk-container-id-1 input.sk-hidden--visually {
-  border: 0;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-#sk-container-id-1 div.sk-dashed-wrapped {
-  border: 1px dashed var(--sklearn-color-line);
-  margin: 0 0.4em 0.5em 0.4em;
-  box-sizing: border-box;
-  padding-bottom: 0.4em;
-  background-color: var(--sklearn-color-background);
-}
-
-#sk-container-id-1 div.sk-container {
-  /* jupyter's `normalize.less` sets `[hidden] { display: none; }`
-     but bootstrap.min.css set `[hidden] { display: none !important; }`
-     so we also need the `!important` here to be able to override the
-     default hidden behavior on the sphinx rendered scikit-learn.org.
-     See: https://github.com/scikit-learn/scikit-learn/issues/21755 */
-  display: inline-block !important;
-  position: relative;
-}
-
-#sk-container-id-1 div.sk-text-repr-fallback {
-  display: none;
-}
-
-div.sk-parallel-item,
-div.sk-serial,
-div.sk-item {
-  /* draw centered vertical line to link estimators */
-  background-image: linear-gradient(var(--sklearn-color-text-on-default-background), var(--sklearn-color-text-on-default-background));
-  background-size: 2px 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-/* Parallel-specific style estimator block */
-
-#sk-container-id-1 div.sk-parallel-item::after {
-  content: "";
-  width: 100%;
-  border-bottom: 2px solid var(--sklearn-color-text-on-default-background);
-  flex-grow: 1;
-}
-
-#sk-container-id-1 div.sk-parallel {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  background-color: var(--sklearn-color-background);
-  position: relative;
-}
-
-#sk-container-id-1 div.sk-parallel-item {
-  display: flex;
-  flex-direction: column;
-}
-
-#sk-container-id-1 div.sk-parallel-item:first-child::after {
-  align-self: flex-end;
-  width: 50%;
-}
-
-#sk-container-id-1 div.sk-parallel-item:last-child::after {
-  align-self: flex-start;
-  width: 50%;
-}
-
-#sk-container-id-1 div.sk-parallel-item:only-child::after {
-  width: 0;
-}
-
-/* Serial-specific style estimator block */
-
-#sk-container-id-1 div.sk-serial {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--sklearn-color-background);
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
-
-/* Toggleable style: style used for estimator/Pipeline/ColumnTransformer box that is
-clickable and can be expanded/collapsed.
-- Pipeline and ColumnTransformer use this feature and define the default style
-- Estimators will overwrite some part of the style using the `sk-estimator` class
-*/
-
-/* Pipeline and ColumnTransformer style (default) */
-
-#sk-container-id-1 div.sk-toggleable {
-  /* Default theme specific background. It is overwritten whether we have a
-  specific estimator or a Pipeline/ColumnTransformer */
-  background-color: var(--sklearn-color-background);
-}
-
-/* Toggleable label */
-#sk-container-id-1 label.sk-toggleable__label {
-  cursor: pointer;
-  display: block;
-  width: 100%;
-  margin-bottom: 0;
-  padding: 0.5em;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-#sk-container-id-1 label.sk-toggleable__label-arrow:before {
-  /* Arrow on the left of the label */
-  content: "▸";
-  float: left;
-  margin-right: 0.25em;
-  color: var(--sklearn-color-icon);
-}
-
-#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {
-  color: var(--sklearn-color-text);
-}
-
-/* Toggleable content - dropdown */
-
-#sk-container-id-1 div.sk-toggleable__content {
-  max-height: 0;
-  max-width: 0;
-  overflow: hidden;
-  text-align: left;
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-0);
-}
-
-#sk-container-id-1 div.sk-toggleable__content.fitted {
-  /* fitted */
-  background-color: var(--sklearn-color-fitted-level-0);
-}
-
-#sk-container-id-1 div.sk-toggleable__content pre {
-  margin: 0.2em;
-  border-radius: 0.25em;
-  color: var(--sklearn-color-text);
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-0);
-}
-
-#sk-container-id-1 div.sk-toggleable__content.fitted pre {
-  /* unfitted */
-  background-color: var(--sklearn-color-fitted-level-0);
-}
-
-#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {
-  /* Expand drop-down */
-  max-height: 200px;
-  max-width: 100%;
-  overflow: auto;
-}
-
-#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
-  content: "▾";
-}
-
-/* Pipeline/ColumnTransformer-specific style */
-
-#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
-  color: var(--sklearn-color-text);
-  background-color: var(--sklearn-color-unfitted-level-2);
-}
-
-#sk-container-id-1 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
-  background-color: var(--sklearn-color-fitted-level-2);
-}
-
-/* Estimator-specific style */
-
-/* Colorize estimator box */
-#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-2);
-}
-
-#sk-container-id-1 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
-  /* fitted */
-  background-color: var(--sklearn-color-fitted-level-2);
-}
-
-#sk-container-id-1 div.sk-label label.sk-toggleable__label,
-#sk-container-id-1 div.sk-label label {
-  /* The background is the default theme color */
-  color: var(--sklearn-color-text-on-default-background);
-}
-
-/* On hover, darken the color of the background */
-#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {
-  color: var(--sklearn-color-text);
-  background-color: var(--sklearn-color-unfitted-level-2);
-}
-
-/* Label box, darken color on hover, fitted */
-#sk-container-id-1 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
-  color: var(--sklearn-color-text);
-  background-color: var(--sklearn-color-fitted-level-2);
-}
-
-/* Estimator label */
-
-#sk-container-id-1 div.sk-label label {
-  font-family: monospace;
-  font-weight: bold;
-  display: inline-block;
-  line-height: 1.2em;
-}
-
-#sk-container-id-1 div.sk-label-container {
-  text-align: center;
-}
-
-/* Estimator-specific */
-#sk-container-id-1 div.sk-estimator {
-  font-family: monospace;
-  border: 1px dotted var(--sklearn-color-border-box);
-  border-radius: 0.25em;
-  box-sizing: border-box;
-  margin-bottom: 0.5em;
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-0);
-}
-
-#sk-container-id-1 div.sk-estimator.fitted {
-  /* fitted */
-  background-color: var(--sklearn-color-fitted-level-0);
-}
-
-/* on hover */
-#sk-container-id-1 div.sk-estimator:hover {
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-2);
-}
-
-#sk-container-id-1 div.sk-estimator.fitted:hover {
-  /* fitted */
-  background-color: var(--sklearn-color-fitted-level-2);
-}
-
-/* Specification for estimator info (e.g. "i" and "?") */
-
-/* Common style for "i" and "?" */
-
-.sk-estimator-doc-link,
-a:link.sk-estimator-doc-link,
-a:visited.sk-estimator-doc-link {
-  float: right;
-  font-size: smaller;
-  line-height: 1em;
-  font-family: monospace;
-  background-color: var(--sklearn-color-background);
-  border-radius: 1em;
-  height: 1em;
-  width: 1em;
-  text-decoration: none !important;
-  margin-left: 1ex;
-  /* unfitted */
-  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
-  color: var(--sklearn-color-unfitted-level-1);
-}
-
-.sk-estimator-doc-link.fitted,
-a:link.sk-estimator-doc-link.fitted,
-a:visited.sk-estimator-doc-link.fitted {
-  /* fitted */
-  border: var(--sklearn-color-fitted-level-1) 1pt solid;
-  color: var(--sklearn-color-fitted-level-1);
-}
-
-/* On hover */
-div.sk-estimator:hover .sk-estimator-doc-link:hover,
-.sk-estimator-doc-link:hover,
-div.sk-label-container:hover .sk-estimator-doc-link:hover,
-.sk-estimator-doc-link:hover {
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-3);
-  color: var(--sklearn-color-background);
-  text-decoration: none;
-}
-
-div.sk-estimator.fitted:hover .sk-estimator-doc-link.fitted:hover,
-.sk-estimator-doc-link.fitted:hover,
-div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
-.sk-estimator-doc-link.fitted:hover {
-  /* fitted */
-  background-color: var(--sklearn-color-fitted-level-3);
-  color: var(--sklearn-color-background);
-  text-decoration: none;
-}
-
-/* Span, style for the box shown on hovering the info icon */
-.sk-estimator-doc-link span {
-  display: none;
-  z-index: 9999;
-  position: relative;
-  font-weight: normal;
-  right: .2ex;
-  padding: .5ex;
-  margin: .5ex;
-  width: min-content;
-  min-width: 20ex;
-  max-width: 50ex;
-  color: var(--sklearn-color-text);
-  box-shadow: 2pt 2pt 4pt #999;
-  /* unfitted */
-  background: var(--sklearn-color-unfitted-level-0);
-  border: .5pt solid var(--sklearn-color-unfitted-level-3);
-}
-
-.sk-estimator-doc-link.fitted span {
-  /* fitted */
-  background: var(--sklearn-color-fitted-level-0);
-  border: var(--sklearn-color-fitted-level-3);
-}
-
-.sk-estimator-doc-link:hover span {
-  display: block;
-}
-
-/* "?"-specific style due to the `<a>` HTML tag */
-
-#sk-container-id-1 a.estimator_doc_link {
-  float: right;
-  font-size: 1rem;
-  line-height: 1em;
-  font-family: monospace;
-  background-color: var(--sklearn-color-background);
-  border-radius: 1rem;
-  height: 1rem;
-  width: 1rem;
-  text-decoration: none;
-  /* unfitted */
-  color: var(--sklearn-color-unfitted-level-1);
-  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
-}
-
-#sk-container-id-1 a.estimator_doc_link.fitted {
-  /* fitted */
-  border: var(--sklearn-color-fitted-level-1) 1pt solid;
-  color: var(--sklearn-color-fitted-level-1);
-}
-
-/* On hover */
-#sk-container-id-1 a.estimator_doc_link:hover {
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-3);
-  color: var(--sklearn-color-background);
-  text-decoration: none;
-}
-
-#sk-container-id-1 a.estimator_doc_link.fitted:hover {
-  /* fitted */
-  background-color: var(--sklearn-color-fitted-level-3);
-}
-</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LogisticRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;&nbsp;LogisticRegression<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.linear_model.LogisticRegression.html">?<span>Documentation for LogisticRegression</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>LogisticRegression()</pre></div> </div></div></div></div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membuat prediksi pada data uji</span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">logreg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shape of X_train: (80, 5483)
+Shape of X_test: (20, 5483)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mengevaluasi model</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy:&quot;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Classification Report:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Confusion Matrix:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+
+<span class="c1"># Membuat model Logistic Regression dengan regularisasi</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>  <span class="c1"># Mengurangi nilai C untuk menambah regularisasi</span>
+
+<span class="c1"># Melatih model dengan data yang sudah diresample (jika diperlukan)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Memprediksi hasil pada data testing</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Evaluasi hasil prediksi</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">confusion_matrix</span>
+
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Accuracy: </span><span class="si">{</span><span class="n">accuracy</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%&#39;</span><span class="p">)</span>
+
+<span class="c1"># Menampilkan confusion matrix dan laporan klasifikasi</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Confusion Matrix:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Classification Report:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+
+<span class="c1"># Alternatif: Menggunakan cross-validation untuk mengecek overfitting</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+
+<span class="c1"># Menggunakan cross-validation</span>
+<span class="n">cv_scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Cross-validation accuracy: </span><span class="si">{</span><span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 0.8
-Classification Report:
-               precision    recall  f1-score   support
-
-     Makanan       1.00      0.67      0.80        12
-      Travel       0.67      1.00      0.80         8
-
-    accuracy                           0.80        20
-   macro avg       0.83      0.83      0.80        20
-weighted avg       0.87      0.80      0.80        20
-
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 70.00%
 Confusion Matrix:
- [[8 4]
+[[6 6]
  [0 8]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     Makanan       1.00      0.50      0.67        12
+      Travel       0.57      1.00      0.73         8
+
+    accuracy                           0.70        20
+   macro avg       0.79      0.75      0.70        20
+weighted avg       0.83      0.70      0.69        20
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cross-validation accuracy: 60.00%
 </pre></div>
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Simpan TF-IDF vectorizer dan model</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;tfidf_vectorizer.pkl&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">tfidf_file</span><span class="p">:</span>
+    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">vectorizer</span><span class="p">,</span> <span class="n">tfidf_file</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;logistic_regression_model.pkl&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">model_file</span><span class="p">:</span>
+    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">model_file</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">joblib</span>
+
+<span class="c1"># Memuat vectorizer dan model</span>
+<span class="n">tfidf</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;tfidf_vectorizer.pkl&#39;</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;logistic_regression_model.pkl&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Teks baru yang ingin diprediksi</span>
+<span class="n">new_text_1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;&#39;Jakarta - Biasanya burger berisi patty atau daging sapi bundar pipih. Berbeda dengan burger satu ini yang menggunakan kepiting utuh besar sebagai isiannya.</span>
+<span class="s1">Hamburger atau burger merupakan makanan asal Amerika dan Jerman yang sudah mendunia. Konsep makanan ini cukup sederhana yaitu roti bundar atau bun dibelah dua,</span>
+<span class="s1">kemudian diisi oleh patty yang diolah dari daging sapi cincang. Tapi seiring berjalannya waktu, burger memiliki banyak varian terutama isiannya. Di Jepang contohnya,</span>
+<span class="s1">ada satu restoran yang meluncurkan menu burger unik. Isiannya memakai kepiting yang masih utuh dan ukurannya cukup besar. Dilansir dari SoraNews24 (25/09),</span>
+<span class="s1">gerai restoran Dom Dom Burger di Jepang baru saja meluncurkan menu Marugoto Kani Burger. Kani dalam bahasa Jepang berarti kepiting, sementara kata marugoto memiliki artian &#39;utuh&#39;.</span>
+<span class="s1">Unik!  Burger Ini Isinya Kepiting Utuh Berukuran Besar Foto: Site News Konsep inilah yang diangkat oleh Dom Dom Burger, mereka ingin memberikan pengalaman bersantap baru agar</span>
+<span class="s1">pengunjung bisa menikmati burger kepiting utuh. Artinya burger ini terdiri dari daging kepiting yang masih ada cangkangnya. Sebelum diapit dengan dua roti dan sayuran segar,</span>
+<span class="s1">Marugoto Kani Burger menggunakan seekor kepiting ukuran besar yang kemudian dibalut tepung dan digoreng sampai garing. Agar rasanya tak hambar, bagian luar kepiting disiram</span>
+<span class="s1">dengan dua pilihan saus berebeda ada Sweet Chili Sauce dan Curry Sauce. Untuk harga, memang burger ini terbilang mahal dibandingkan harga burger kebanyakan di Jepang.</span>
+<span class="s1">Namun harganya sepadan dengan kualitas burger yang diterima. Penggunaan kepiting utuh menjadi alasan mengapa harga burger ini cukup tinggi. Unik!  Burger Ini Isinya</span>
+<span class="s1">Kepiting Utuh Berukuran Besar Foto: Site News Burger kepiting ini dihargai 1.290 yen (Rp 136.000) untuk menu a la carte. Sementara menu paket burger terdiri dari</span>
+<span class="s1">kentang goreng dan minuman harganya 1.720 yen (Rp 181.000). Meski begitu tidak ada informasi lebih lanjut apakah semua bagian kepiting di burger bisa dimakan, atau hanya bagian dalamnya saja yang aman untuk dimakan.</span>
+<span class="s1">Menu burger ini termasuk ke dalam menu edisi terbatas dan hanya dijual dari tanggal 28 September sampai batas waktu yang ditentukan nantinya.</span>
+<span class="s1">Selain itu burger kepiting ini juga dilengkapi oleh tusuk gigi kecil yang memiliki bendera mini berisi maskot restoran Dom Dom yaitu gajah yang cocok untuk dikoleksi. (sob/odi)&#39;&#39;&#39;</span><span class="p">]</span>
+
+<span class="n">new_text_2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;&#39;Denpasar - Dengan jumlah populasi yang tinggi, pertumbuhan sektor penerbangan Indonesia merupakan yang tertinggi ketiga,</span>
+<span class="s1">cuma kalah dari India dan Vietnam. Namun rata-rata umur pesawat yang dimiliki Indonesia ternyata lebih tua dibandingkan</span>
+<span class="s1">milik negara lain di kawasan ASEAN. Saat ini, Indonesia mempunyai sekitar 360 pesawat yang melayani penerbangan. Jika melihat data-data dari Boeing,</span>
+<span class="s1">umur pesawat di Brunei Darussalam merupakan yang paling muda, rata-ratanya 5,7 tahun, disusul Singapura 8,3 tahun, lalu Filipina 10,3 tahun, Malaysia 10,9 tahun, Thailand 11 tahun,</span>
+<span class="s1">Laos 11,6 tahun, Kamboja 12,5 tahun, Indonesia 14,4 tahun dan Myanmar 14,9 tahun. &quot;Karena itu bakal banyak pesawat yang membutuhkan pergantian. Indonesia butuh lebih banyak pesawat</span>
+<span class="s1">sekarang untuk mencapai tingkat kursi per kapita di Asia Tenggara. Indonesia setidaknya membutuhkan lebih dari 200 pesawat narrow body (satu lorong),&quot; ujar Managing Director of Boeing Commercial Marketing for Northeast Asia,</span>
+<span class="s1">Southeast Asia and Oceania, David Schulte, dalam sebuah forum di Bali, beberapa waktu lalu. Jika melihat data penumpang per hari setiap jalan (PDEW) rata-rata penumpang di Indonesia hanya terbang paling jauh 3.000 mil saja.</span>
+<span class="s1">&quot;90 persen permintaan dari Indonesia adalah entah itu di dalam Asia atau penerbangan domestik. Itu artinya ada high demand untuk pesawat single isle seperti Boeing 737. &quot;Jadi ini lebih cocok untuk Indonesia,&quot; ujarnya. David Schulte, managing director of Boeing Commercial Marketing for Northeast Asia,Southeast Asia and Oceania. (Dadan Kuswaraharja) Sementara jika melirik ke pasar yang lebih besar yakni Asia Tenggara, hampir 1.200 pesawat baru yang lebih hemat bahan bakar akan menggantikan jet-jet yang sudah berumur cukup tua di kawasan ini selama 20 tahun ke depan. &quot;Selain itu, karena penerbangan global bertujuan untuk mencapai nol emisi pada tahun 2050, bahan baku berbasis bio yang tersedia di kawasan ini dapat memasok sekitar 12</span><span class="si">% d</span><span class="s1">ari permintaan bahan bakar penerbangan berkelanjutan (SAF) global, menurut penilaian bahan baku SAF yang didukung Boeing,&quot; ujarnya (ddn/fem) &#39;&#39;&#39;</span><span class="p">]</span>
+<span class="c1"># Gabungkan kedua teks menjadi satu list</span>
+<span class="n">new_text</span> <span class="o">=</span> <span class="n">new_text_1</span> <span class="o">+</span> <span class="n">new_text_2</span>
+
+<span class="c1"># Preprocessing dan transformasi menggunakan TF-IDF yang sudah disimpan</span>
+<span class="n">new_text_tfidf</span> <span class="o">=</span> <span class="n">tfidf</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">new_text</span><span class="p">)</span>
+
+<span class="c1"># Melakukan prediksi menggunakan model Logistic Regression</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">new_text_tfidf</span><span class="p">)</span>
+
+<span class="c1"># Hasil prediksi</span>
+<span class="n">predicted_categories</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Makanan&quot;</span> <span class="k">if</span> <span class="n">prediction</span> <span class="o">==</span> <span class="s1">&#39;Makanan&#39;</span> <span class="k">else</span> <span class="s2">&quot;Travel&quot;</span> <span class="k">for</span> <span class="n">prediction</span> <span class="ow">in</span> <span class="n">predictions</span><span class="p">]</span>
+
+<span class="c1"># Output hasil prediksi untuk masing-masing teks</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">category</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">predicted_categories</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Prediksi untuk teks </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prediksi untuk teks 1: Makanan
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prediksi untuk teks 2: Travel
+</pre></div>
+</div>
+</div>
+</div>
+<p>link streamlite</p>
+<p><a class="reference external" href="https://ifa-apps.streamlit.app/">https://ifa-apps.streamlit.app/</a></p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1585,6 +1293,15 @@ Confusion Matrix:
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title"><strong>Tugas 2 Preprocessing Dan TF IDF</strong></p>
       </div>
+    </a>
+    <a class="right-next"
+       href="tugas_4.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>Tugas 4</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
